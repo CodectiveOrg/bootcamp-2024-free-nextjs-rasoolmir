@@ -4,7 +4,7 @@ type Post = {
 };
 
 export default async function Home() {
-  const res :Response = await fetch("https://jsonplaceholder.org/posts", {
+  const res: Response = await fetch("https://jsonplaceholder.org/posts", {
     cache: "no-store",
   });
 
@@ -13,11 +13,9 @@ export default async function Home() {
   return (
     <main>
       <h1>!سلام، رفیق</h1>
-      <p>
-        لورم
-      </p>
+      <p>لورم</p>
       <ul>
-       {posts.map((post) => (
+        {posts.map((post) => (
           <li key={post.id}>{post.title}</li>
         ))}
       </ul>
