@@ -12,6 +12,7 @@
     gap: 1rem;
 
     font-size: var(--fz-700);
+    color: var(--Neutral_Shade-20);
 
     svg {
       font-size: 1.5em;
@@ -24,18 +25,16 @@
     align-items: center;
     gap: 1rem;
 
-    .title {
-    }
+    /* .title {
+    } */
 
     > ul {
       display: flex;
       gap: 1rem;
 
       > li {
-        background-color: var(--color-gray-20);
-
+        background-color: var(--Neutral_100);
         padding: 0.25rem 0.75rem;
-
         border-radius: 999rem;
       }
     }

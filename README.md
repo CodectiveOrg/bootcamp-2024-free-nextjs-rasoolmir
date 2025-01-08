@@ -1,4 +1,4 @@
-# Docter Finder
+# Jobior
 
 Visit my project: [Demo](https://docter-finder.vercel.app/)
 
