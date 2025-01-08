@@ -1,0 +1,40 @@
+/*.jobـlist{
+	
+}*/
+
+.jobـitem {
+  width: 24.5rem;
+  padding: 10px;
+  border-bottom: 1px solid var(--Neutral_Shade-90);
+}
+
+.jobـitem h3 {
+  color: var(--Neutral_Shade-10);
+}
+
+.jobـitem p {
+  color: var(--Neutral_Shade-50);
+}
+
+.jobـitem:hover {
+  border: 1px solid var(--Primary_Shade_05);
+  border-radius: var(--border-radius2);
+}
+
+.other p {
+  color: var(--Neutral_Shade-50);
+}
+
+.Company {
+  display: flex;
+  align-item: center;
+}
+.Company img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.Company p {
+  color: var(--Neutral_Shade-60);
+  text-align: left;
+}
