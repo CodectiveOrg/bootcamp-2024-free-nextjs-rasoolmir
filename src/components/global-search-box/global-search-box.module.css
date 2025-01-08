@@ -2,28 +2,29 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-
   inline-size: min(50rem, 100%);
-
   padding-inline: 1rem;
-
-  border: 1px solid var(--color-gray-20);
-  border-radius: 999rem;
-
+  border: 1px solid var(--Neutral_Shade-20);
+  border-radius: var(--border-radius1);
+  color: var(--Neutral_Shade-20);
+  margin-bottom: 1.8rem;
   .prefix {
     display: grid;
     align-items: center;
-
     font-size: var(--fz-500);
+    background-color: var(--Primary_Tint_30);
+    color: var(--Neutral_Shade-10);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--border-radius1);
+    padding: 0.4rem;
   }
 
   input {
     flex: 1 1 0;
-
+    color: var(--Neutral_Shade-20);
     background-color: transparent;
-
     padding: 1rem;
-
     border: none;
 
     &:focus {
@@ -32,7 +33,7 @@
   }
 
   .divider {
-    background-color: var(--color-gray-20);
+    background-color: var(--Neutral_Shade-90);
 
     block-size: 2em;
     inline-size: 1px;
@@ -41,7 +42,7 @@
   .suffix {
     button {
       background-color: transparent;
-
+      color: var(--Neutral_Shade-20);
       display: flex;
       align-items: center;
       gap: 0.25rem;
@@ -55,19 +56,12 @@
 
       svg {
         font-size: 1.5em;
-      }
-
-      &:hover {
-        background-color: var(--color-gray-16);
+        color: var(--Neutral_Shade-20);
       }
     }
   }
 
   &:focus-within {
-    border-color: var(--color-primary);
-
-    .prefix {
-      color: var(--color-primary);
-    }
+    border: 1px solid var(--Primary-100);
   }
 }

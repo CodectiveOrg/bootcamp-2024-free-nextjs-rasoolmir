@@ -12,8 +12,10 @@
 
       > li {
         a {
+          color: var(--Neutral_Shade-20);
+
           &.active {
-            color: var(--color-primary);
+            color: var(--Primary-100);
           }
         }
       }
@@ -22,7 +24,7 @@
 
   .cta {
     background-color: transparent;
-    color: var(--color-primary);
+    color: var(--Neutral_Shade-20);
 
     margin-inline-start: auto;
     padding: 0.5rem 1rem;
@@ -35,7 +37,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: var(--color-primary);
+      background-color: var(--Primary-100);
       color: var(--color-primary-opposite);
     }
   }
