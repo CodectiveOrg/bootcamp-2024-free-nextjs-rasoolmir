@@ -1,9 +1,7 @@
 import { useState, useCallback } from "react";
 import styles from "./filter.module.css";
 
-export default function FiltersComponent({
-  setSelectedFilters,
-}) {
+export default function FiltersComponent({ setSelectedFilters }) {
   const [dropdownStates, setDropdownStates] = useState({});
 
   const toggleDropdown = (label) => {

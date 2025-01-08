@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import jobs from "../../data/jobs.js";
 import styles from "./list.module.css";
-import Image from 'next/image';
+import Image from "next/image";
 export default function ListComponent({ selectedFilters }) {
   const [filteredJobs, setFilteredJobs] = useState(jobs);
 
