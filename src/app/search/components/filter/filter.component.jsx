@@ -2,7 +2,6 @@ import { useState, useCallback } from "react";
 import styles from "./filter.module.css";
 
 export default function FiltersComponent({
-  selectedFilters,
   setSelectedFilters,
 }) {
   const [dropdownStates, setDropdownStates] = useState({});

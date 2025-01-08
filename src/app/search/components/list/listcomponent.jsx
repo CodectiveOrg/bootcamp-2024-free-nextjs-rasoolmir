@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import jobs from "../../data/jobs.js";
 import styles from "./list.module.css";
-
+import Image from 'next/image';
 export default function ListComponent({ selectedFilters }) {
   const [filteredJobs, setFilteredJobs] = useState(jobs);
 
@@ -30,7 +30,7 @@ export default function ListComponent({ selectedFilters }) {
         filteredJobs.map((job) => (
           <div key={job.id} className={styles.jobـitem}>
             <div className={styles.Company}>
-              <img src={job.Image} alt="job_Image" />
+              <Image src={job.Image} alt="" width={24} height={24} />
               <p>{job.Company}</p>
             </div>
             <h3>{job.Title}</h3>

@@ -6,7 +6,6 @@ import ListComponent from "./components/list/listcomponent";
 import DetailsComponent from "./components/details/detailscomponent";
 import style from "./page.module.css";
 import GlobalSearchBoxComponent from "@/components/global-search-box/global-search-box.component";
-import jobs from "./data/jobs.js";
 
 export default function Page(): ReactElement {
   const [selectedFilters, setSelectedFilters] = useState([]);
