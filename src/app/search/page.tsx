@@ -28,7 +28,7 @@ export default function Page(): ReactElement {
           selectedFilters={selectedFilters}
           setSelectedJob={setSelectedJob}
         />
-        <DetailsComponent />
+        <DetailsComponent selectedJob={selectedJob} />
       </main>
     </div>
   );
