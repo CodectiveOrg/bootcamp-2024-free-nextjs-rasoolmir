@@ -1,4 +1,5 @@
 .header {
+  box-shadow: var(--Neutral_Shade-80);
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -12,7 +13,7 @@
 
       > li {
         a {
-          color: var(--Neutral_Shade-20);
+          /* color: var(--Neutral_Shade-20); */
 
           &.active {
             color: var(--Primary-100);

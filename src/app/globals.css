@@ -76,7 +76,9 @@
 }
 
 html {
-  color-scheme: dark;
+  color-scheme: light;
+  accent-color: var(--Primary-100);
+  caret-color: var(--Primary-100);
 }
 
 input,
@@ -124,7 +126,7 @@ body {
   }
 
   .tagline {
-    /* background-color: var(--color-gray-16); */
+    background-color: var(--Neutral_Shade-20);
     padding-block: 1rem;
     text-align: center;
   }

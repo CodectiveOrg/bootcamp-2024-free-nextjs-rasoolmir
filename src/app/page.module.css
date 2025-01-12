@@ -34,6 +34,7 @@
 
       > li {
         background-color: var(--Neutral_100);
+        box-shadow: var(--Neutral_Shade-80);
         padding: 0.25rem 0.75rem;
         border-radius: 999rem;
       }
