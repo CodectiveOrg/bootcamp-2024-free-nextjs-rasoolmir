@@ -8,6 +8,7 @@
   border-radius: var(--border-radius1);
   color: var(--Neutral_Shade-20);
   margin-bottom: 1.8rem;
+  margin: 20px auto;
 
   .prefix {
     display: grid;

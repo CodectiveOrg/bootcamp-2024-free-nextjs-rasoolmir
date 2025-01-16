@@ -1,34 +1,33 @@
 .page {
+  display: grid;
   margin-block-end: 2rem;
+  align-items: start;
+  gap: 1rem;
+  margin-block: 2rem;
 }
+.search_content {
+  display: grid;
 
+  .filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    height: 2.5px;
+    width: 100px;
+    display: flex;
+    gap: 0.6rem;
+    height: 2.5rem;
+    margin-left: 16.4rem;
+  }
+}
 .divider {
   border: 1px solid var(--Neutral_Shade-90);
   margin: 20px 0;
-}
-
-.searh_content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .main {
   display: grid;
   grid-template-columns: 40% 60%;
   align-items: start;
   gap: 1rem;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-.content {
-  display: flex;
-}
-
-.aside {
-  width: 30%;
-  border-right: 1px solid #ddd;
 }
