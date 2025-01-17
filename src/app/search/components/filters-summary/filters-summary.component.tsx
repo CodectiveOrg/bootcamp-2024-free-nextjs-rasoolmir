@@ -13,7 +13,12 @@ export default function FiltersSummaryComponent(): ReactElement | null {
 
   const isEmpty = useMemo(() => {
     return (
-      !filters.query && !filters.expertise && !filters.gender && !filters.degree
+      !filters.query &&
+      !filters.title &&
+      !filters.location &&
+      !filters.Company &&
+      !filters.datePosted &&
+      !filters.jobType
     );
   }, [filters]);
 
@@ -31,10 +36,10 @@ export default function FiltersSummaryComponent(): ReactElement | null {
 
   return (
     <div className={styles["filters-summary"]}>
-      <div className={styles.title}>فیلترهای انتخاب‌شده</div>
+      <div className={styles.title}>Selected filter</div>
 
       <button type="button" onClick={removeAllButtonClickHandler}>
-        حذف همه
+        Delete all
       </button>
 
       <ul className={styles.filters}>
@@ -49,9 +54,19 @@ export default function FiltersSummaryComponent(): ReactElement | null {
             {filters.location}
           </li>
         )}
-        {filters.company && (
-          <li onClick={() => filterClickHandler("company")}>
-            {filters.company}
+        {filters.Company && (
+          <li onClick={() => filterClickHandler("Company")}>
+            {filters.Company}
+          </li>
+        )}
+        {filters.datePosted && (
+          <li onClick={() => filterClickHandler("datePosted")}>
+            {filters.datePosted}
+          </li>
+        )}
+        {filters.jobType && (
+          <li onClick={() => filterClickHandler("jobType")}>
+            {filters.jobType}
           </li>
         )}
       </ul>

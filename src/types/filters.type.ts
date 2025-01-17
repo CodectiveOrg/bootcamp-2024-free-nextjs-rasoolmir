@@ -2,5 +2,7 @@ export type FiltersType = {
   query?: string;
   title?: string;
   location?: string;
-  company?: string;
+  Company?: string;
+  datePosted?: string;
+  jobType?: string;
 };

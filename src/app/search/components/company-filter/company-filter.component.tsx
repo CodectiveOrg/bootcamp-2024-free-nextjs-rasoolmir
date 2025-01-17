@@ -16,7 +16,7 @@ export default function CompanyFilterComponent(): ReactElement {
 
   const changeHandler = (value: string): void => {
     setSelectedCompany(value);
-    dispatchFilters({ type: "updated_filter", key: "company", value });
+    dispatchFilters({ type: "updated_filter", key: "Company", value });
   };
 
   return (
