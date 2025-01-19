@@ -10,8 +10,8 @@
     padding: 1rem;
     border-bottom: 1px solid var(--Neutral_Shade-90);
 
-    li:hover {
-      border: 1px solid var(--Primary_Shade_05);
+    &:hover {
+      border: 1px solid var(--Neutral_Shade-70);
       border-radius: var(--border-radius2);
     }
 
