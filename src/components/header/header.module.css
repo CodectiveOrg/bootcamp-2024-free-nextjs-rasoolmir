@@ -1,5 +1,5 @@
 .header {
-  box-shadow: var(--Neutral_Shade-80);
+  box-shadow: var(--neutral-shade-80);
   display: grid;
   padding-block: 1rem;
   height: 6.25rem;
@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     height: 3rem;
-    border-bottom: 1px solid var(--Neutral_Shade-90);
+    border-bottom: 1px solid var(--neutral-shade-90);
 
     .top_right {
       width: 5.6rem;
@@ -22,12 +22,12 @@
       align-items: center;
 
       .empoloyers {
-        color: var(--Neutral_Shade-40);
+        color: var(--neutral-shade-40);
         text-align: center;
       }
 
       .divider {
-        background-color: var(--Neutral_Shade-80);
+        background-color: var(--neutral-shade-80);
         block-size: 2em;
         inline-size: 1px;
       }
@@ -35,12 +35,11 @@
       .cta {
         display: flex;
         align-items: center;
-        background-color: var(--Primary_Shade_05);
-        color: var(--Neutral_100);
+        background-color: var(--primary-shade-05);
+        color: var(--neutral-100);
         margin-inline-start: auto;
         padding: 0.5rem;
-        border-radius: var(--border-radius1);
-        width: 5.2rem;
+        border-radius: var(--border-radius-circle);
         height: 2rem;
         border: none;
       }
@@ -51,9 +50,8 @@
     background-image: url(../../assets/illustrations/Subheader.png);
     background-size: cover;
     background-position: center;
-    width: 100%;
     height: 3.5rem;
-    border-bottom: 1px solid var(--Neutral_Shade-90);
+    border-bottom: 1px solid var(--neutral-shade-90);
   }
   nav {
     height: 100%;
@@ -66,14 +64,14 @@
 
       > li {
         a {
-          color: var(--Neutral_Shade-40);
+          color: var(--neutral-shade-40);
 
           &:hover {
-            color: var(--Primary-100);
+            color: var(--primary-100);
           }
           &.active {
-            color: var(--Primary-100);
-            border-bottom: 1px solid var(--Primary-100);
+            color: var(--primary-100);
+            border-bottom: 1px solid var(--primary-100);
           }
         }
       }

@@ -3,7 +3,7 @@ export type JobModel = {
   title: string;
   image: string;
   isVerified: boolean;
-  Company: string;
+  company: string;
   location: string;
   jobType: string;
   datePosted: string;

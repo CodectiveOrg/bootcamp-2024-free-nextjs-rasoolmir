@@ -56,13 +56,13 @@ export default async function Page({
 }
 
 function generateDefaultFilters(searchParams: SearchParams): FiltersType {
-  const { query, title, location, Company } = searchParams;
+  const { query, title, location, company } = searchParams;
 
   return {
     query: normalizeFilter(query),
     title: normalizeFilter(title),
     location: normalizeFilter(location),
-    Company: normalizeFilter(Company),
+    company: normalizeFilter(company),
   };
 }
 

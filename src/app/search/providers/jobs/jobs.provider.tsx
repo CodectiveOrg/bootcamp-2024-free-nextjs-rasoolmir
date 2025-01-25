@@ -37,7 +37,7 @@ export default function JobsProvider({ children, jobs }: Props): ReactElement {
         doesJobInclude(job, filters.query) &&
         doesInclude(job.title, filters.title) &&
         doesInclude(job.location, filters.location) &&
-        doesInclude(job.Company, filters.Company) &&
+        doesInclude(job.company, filters.company) &&
         doesInclude(job.jobType, filters.jobType) &&
         doesInclude(job.datePosted, filters.datePosted)
       );
@@ -61,7 +61,7 @@ function doesJobInclude(job: JobModel, query?: string): boolean {
     return true;
   }
 
-  return doesSomeInclude([job.title, job.Company, job.location], query);
+  return doesSomeInclude([job.title, job.company, job.location], query);
 }
 
 function doesSomeInclude(items: string[], query?: string): boolean {

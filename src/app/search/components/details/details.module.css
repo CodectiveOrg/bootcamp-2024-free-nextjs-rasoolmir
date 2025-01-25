@@ -1,6 +1,6 @@
 .r {
   width: 35.4rem;
-  border: 1px solid var(--Neutral_Shade-90);
-  border-radius: var(--border-radius2);
+  border: 1px solid var(--neutral-shade-90);
+  border-radius: var(--border-radius-square);
   height: 100%;
 }

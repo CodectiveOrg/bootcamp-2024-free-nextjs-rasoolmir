@@ -4,7 +4,7 @@
   column-gap: 1rem;
   row-gap: 2rem;
   padding-block: 1rem;
-  border-top: 1px solid var(--Neutral_Shade-90);
+  border-top: 1px solid var(--neutral-shade-90);
 
   .lang,
   .visuals,
@@ -52,7 +52,7 @@
       color: var(--color-primary);
       padding: 0.5rem 1rem;
       border: 1px solid currentcolor;
-      border-radius: var(--border-radius1);
+      border-radius: var(--border-radius-circle);
       font-weight: 700;
       cursor: pointer;
     }
@@ -61,7 +61,7 @@
   .copyright {
     grid-area: copyright;
     display: flex;
-    border-top: 1px solid var(--Neutral_Shade-90);
+    border-top: 1px solid var(--neutral-shade-90);
     padding-block: 0.5rem;
 
     .socials {

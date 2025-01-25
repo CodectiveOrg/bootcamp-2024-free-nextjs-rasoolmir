@@ -16,18 +16,23 @@ export default function CompanyFilterComponent(): ReactElement {
 
   const changeHandler = (value: string): void => {
     setSelectedCompany(value);
-    dispatchFilters({ type: "updated_filter", key: "Company", value });
+    dispatchFilters({ type: "updated_filter", key: "company", value });
   };
+
+  let selectedOption = options.find(
+    (option) => option.value === selectedCompany,
+  );
+  if (!selectedOption) {
+    selectedOption = {
+      value: "",
+      label: selectedCompany,
+    };
+  }
 
   return (
     <SelectComponent
       options={options}
-      selectedOption={
-        options.find((option) => option.value === selectedCompany) || {
-          value: "",
-          label: selectedCompany,
-        }
-      }
+      selectedOption={selectedOption}
       onSelectedOptionChange={(option) => changeHandler(option.value)}
     />
   );

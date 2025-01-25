@@ -4,9 +4,9 @@
   gap: 0.5rem;
   inline-size: min(50rem, 100%);
   padding-inline: 1rem;
-  border: 1px solid var(--Neutral_Shade-20);
-  border-radius: var(--border-radius1);
-  color: var(--Neutral_Shade-20);
+  border: 1px solid var(--neutral-shade-20);
+  border-radius: var(--border-radius-circle);
+  color: var(--neutral-shade-20);
   margin-bottom: 1.8rem;
   margin: 20px auto;
 
@@ -14,17 +14,17 @@
     display: grid;
     align-items: center;
     font-size: 1.5rem;
-    background-color: var(--Primary_Tint_30);
-    color: var(--Neutral_Shade-10);
+    background-color: var(--primary-tint_30);
+    color: var(--neutral-shade-10);
     width: 2.5rem;
     height: 2.5rem;
-    border-radius: var(--border-radius1);
+    border-radius: var(--border-radius-circle);
     padding: 0.4rem;
   }
 
   input {
     flex: 1 1 0;
-    color: var(--Neutral_Shade-20);
+    color: var(--neutral-shade-20);
     background-color: transparent;
     padding: 1rem;
     border: none;
@@ -35,7 +35,7 @@
   }
 
   .divider {
-    background-color: var(--Neutral_Shade-90);
+    background-color: var(--neutral-shade-90);
 
     block-size: 2em;
     inline-size: 1px;
@@ -44,7 +44,7 @@
   .suffix {
     button {
       background-color: transparent;
-      color: var(--Neutral_Shade-20);
+      color: var(--neutral-shade-20);
       display: flex;
       align-items: center;
       gap: 0.25rem;
@@ -58,12 +58,12 @@
 
       svg {
         font-size: 1.5em;
-        color: var(--Neutral_Shade-20);
+        color: var(--neutral-shade-20);
       }
     }
   }
 
   &:focus-within {
-    border: 1px solid var(--Primary-100);
+    border: 1px solid var(--primary-100);
   }
 }

@@ -6,8 +6,8 @@
 
   padding: 0.5rem;
 
-  border: 1px solid var(--Neutral_Shade-90);
-  border-radius: var(--border-radius1);
+  border: 1px solid var(--neutral-shade-90);
+  border-radius: var(--border-radius-circle);
 
   outline: none;
 
@@ -25,12 +25,12 @@
 
   .caret {
     border: 0.25em solid transparent;
-    border-block-start-color: var(--Neutral_Shade-40);
+    border-block-start-color: var(--neutral-shade-40);
     transform: translateY(25%);
   }
 
   .options {
-    background-color: var(--Neutral_100);
+    background-color: var(--neutral-100);
     box-shadow: var(--shadow-400);
 
     position: absolute;
@@ -43,9 +43,9 @@
     min-inline-size: 100%;
     inline-size: max-content;
 
-    border: 1px solid var(--Neutral_Shade-90);
-    border-radius: var(--border-radius2);
-    color: var(--Primary_Shade_05);
+    border: 1px solid var(--neutral-shade-90);
+    border-radius: var(--border-radius-square);
+    color: var(--primary-shade-05);
 
     .option {
       padding: 0.25rem 0.5rem;
@@ -53,12 +53,12 @@
       cursor: pointer;
 
       &.highlighted {
-        color: var(--Primary_Shade_05);
+        color: var(--primary-shade-05);
       }
 
       &.selected {
-        background-color: var(--Primary_Shade_40);
-        color: var(--Neutral_100);
+        background-color: var(--primary-shade-40);
+        color: var(--neutral-100);
       }
     }
   }
@@ -71,17 +71,17 @@
 
   &:focus,
   &.open {
-    background-color: var(--Primary_Shade_40);
-    color: var(--Neutral_100);
+    background-color: var(--primary-shade-40);
+    color: var(--neutral-100);
 
     .caret {
-      border-block-start-color: var(--Neutral_100);
+      border-block-start-color: var(--neutral-100);
     }
   }
 
   &.floating {
-    background-color: var(--Primary_Shade_40);
-    box-shadow: var(--Neutral_Shade-90);
+    background-color: var(--primary-shade-40);
+    box-shadow: var(--neutral-shade-90);
 
     &:not(&:focus, &.open) {
       border-color: transparent;

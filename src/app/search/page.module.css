@@ -22,7 +22,7 @@
   }
 }
 .divider {
-  border: 1px solid var(--Neutral_Shade-90);
+  border: 1px solid var(--neutral-shade-90);
   margin: 20px 0;
 }
 .main {

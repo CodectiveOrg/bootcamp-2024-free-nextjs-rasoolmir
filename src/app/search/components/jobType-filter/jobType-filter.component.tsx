@@ -22,15 +22,19 @@ export default function JobTypeFilterComponent(): ReactElement {
     dispatchFilters({ type: "updated_filter", key: "jobType", value });
   };
 
+  let selectedOption = options.find(
+    (option) => option.value === selectedJobType,
+  );
+  if (!selectedOption) {
+    selectedOption = {
+      value: "",
+      label: selectedJobType,
+    };
+  }
   return (
     <SelectComponent
       options={options}
-      selectedOption={
-        options.find((option) => option.value === selectedJobType) || {
-          value: "",
-          label: selectedJobType,
-        }
-      }
+      selectedOption={selectedOption}
       onSelectedOptionChange={(option) => changeHandler(option.value)}
     />
   );

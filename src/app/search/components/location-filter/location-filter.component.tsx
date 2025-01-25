@@ -21,15 +21,19 @@ export default function LocationFilterComponent(): ReactElement {
     dispatchFilters({ type: "updated_filter", key: "location", value });
   };
 
+  let selectedOption = options.find(
+    (option) => option.value === selectedLocation,
+  );
+  if (!selectedOption) {
+    selectedOption = {
+      value: "",
+      label: selectedLocation,
+    };
+  }
   return (
     <SelectComponent
       options={options}
-      selectedOption={
-        options.find((option) => option.value === selectedLocation) || {
-          value: "",
-          label: selectedLocation,
-        }
-      }
+      selectedOption={selectedOption}
       onSelectedOptionChange={(option) => changeHandler(option.value)}
     />
   );

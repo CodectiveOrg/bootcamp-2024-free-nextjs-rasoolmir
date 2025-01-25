@@ -22,7 +22,7 @@ export default function ListsComponent(): ReactElement {
           <div className={styles.header}>
             <div className={styles.company}>
               <Image src={job.image} alt="job image" width={24} height={24} />
-              <span>{job.Company}</span>
+              <span>{job.company}</span>
             </div>
             <MingcuteBookmarkLine />
           </div>

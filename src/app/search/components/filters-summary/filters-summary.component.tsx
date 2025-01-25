@@ -16,7 +16,7 @@ export default function FiltersSummaryComponent(): ReactElement | null {
       !filters.query &&
       !filters.title &&
       !filters.location &&
-      !filters.Company &&
+      !filters.company &&
       !filters.datePosted &&
       !filters.jobType
     );
@@ -54,9 +54,9 @@ export default function FiltersSummaryComponent(): ReactElement | null {
             {filters.location}
           </li>
         )}
-        {filters.Company && (
-          <li onClick={() => filterClickHandler("Company")}>
-            {filters.Company}
+        {filters.company && (
+          <li onClick={() => filterClickHandler("company")}>
+            {filters.company}
           </li>
         )}
         {filters.datePosted && (

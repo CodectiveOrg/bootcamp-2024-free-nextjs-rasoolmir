@@ -21,15 +21,19 @@ export default function DatePostedFilterComponent(): ReactElement {
     dispatchFilters({ type: "updated_filter", key: "datePosted", value });
   };
 
+  let selectedOption = options.find(
+    (option) => option.value === selectedDatePosted,
+  );
+  if (!selectedOption) {
+    selectedOption = {
+      value: "",
+      label: selectedDatePosted,
+    };
+  }
   return (
     <SelectComponent
       options={options}
-      selectedOption={
-        options.find((option) => option.value === selectedDatePosted) || {
-          value: "",
-          label: selectedDatePosted,
-        }
-      }
+      selectedOption={selectedOption}
       onSelectedOptionChange={(option) => changeHandler(option.value)}
     />
   );
