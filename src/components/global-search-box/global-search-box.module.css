@@ -2,13 +2,12 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  inline-size: min(50rem, 100%);
+  inline-size: min(50rem, 70%);
   padding-inline: 1rem;
   border: 1px solid var(--neutral-shade-20);
   border-radius: var(--border-radius-circle);
   color: var(--neutral-shade-20);
-  margin-bottom: 1.8rem;
-  margin: 20px auto;
+  margin: 0 auto;
 
   .prefix {
     display: grid;

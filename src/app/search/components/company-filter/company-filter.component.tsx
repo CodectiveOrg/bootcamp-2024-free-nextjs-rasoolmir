@@ -1,39 +1,19 @@
-"use client";
+import { ComponentContext } from "@/app/search/providers/filters/filters.provider";
 
-import { ReactElement, useContext, useState } from "react";
-import SelectComponent from "@/components/select/select.component";
-import { FiltersContext } from "@/app/search/providers/filters/filters.provider";
-
-const options = [
+const companyOptions = [
+  { value: "all", label: "All" },
   { value: "Meta", label: "Meta" },
   { value: "Apple", label: "Apple" },
   { value: "Amazon", label: "Amazon" },
 ];
 
-export default function CompanyFilterComponent(): ReactElement {
-  const { dispatchFilters } = useContext(FiltersContext);
-  const [selectedCompany, setSelectedCompany] = useState("Company");
-
-  const changeHandler = (value: string): void => {
-    setSelectedCompany(value);
-    dispatchFilters({ type: "updated_filter", key: "company", value });
-  };
-
-  let selectedOption = options.find(
-    (option) => option.value === selectedCompany,
-  );
-  if (!selectedOption) {
-    selectedOption = {
-      value: "",
-      label: selectedCompany,
-    };
-  }
-
+export default function CompanyFilterComponent() {
   return (
-    <SelectComponent
-      options={options}
-      selectedOption={selectedOption}
-      onSelectedOptionChange={(option) => changeHandler(option.value)}
+    <ComponentContext
+      options={companyOptions}
+      filterKey="company"
+      defaultLabel="company"
+      initialValue="Company"
     />
   );
 }

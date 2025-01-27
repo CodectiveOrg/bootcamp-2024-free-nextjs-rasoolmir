@@ -1,10 +1,7 @@
-"use client";
+import { ComponentContext } from "@/app/search/providers/filters/filters.provider";
 
-import { ReactElement, useContext, useState } from "react";
-import SelectComponent from "@/components/select/select.component";
-import { FiltersContext } from "@/app/search/providers/filters/filters.provider";
-
-const options = [
+const jobTypeOptions = [
+  { value: "all", label: "All" },
   { value: "Full-time", label: "Full-time" },
   { value: "Part-time", label: "Part-time" },
   { value: "Casual", label: "Casual" },
@@ -13,29 +10,13 @@ const options = [
   { value: "On-site", label: "On-site" },
 ];
 
-export default function JobTypeFilterComponent(): ReactElement {
-  const { dispatchFilters } = useContext(FiltersContext);
-  const [selectedJobType, setSelectedJobType] = useState("JobType");
-
-  const changeHandler = (value: string): void => {
-    setSelectedJobType(value);
-    dispatchFilters({ type: "updated_filter", key: "jobType", value });
-  };
-
-  let selectedOption = options.find(
-    (option) => option.value === selectedJobType,
-  );
-  if (!selectedOption) {
-    selectedOption = {
-      value: "",
-      label: selectedJobType,
-    };
-  }
+export default function JobTypeFilterComponent() {
   return (
-    <SelectComponent
-      options={options}
-      selectedOption={selectedOption}
-      onSelectedOptionChange={(option) => changeHandler(option.value)}
+    <ComponentContext
+      options={jobTypeOptions}
+      filterKey="jobType"
+      defaultLabel="jobType"
+      initialValue="JobType"
     />
   );
 }

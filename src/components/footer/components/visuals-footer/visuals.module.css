@@ -1,0 +1,18 @@
+.visuals {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+
+  .visuals-link {
+    ul {
+      display: grid;
+      gap: 0.5rem;
+      > li {
+        a {
+          font-size: var(--fz-500);
+        }
+      }
+    }
+  }
+}

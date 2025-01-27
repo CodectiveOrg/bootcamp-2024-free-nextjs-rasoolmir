@@ -1,40 +1,19 @@
-"use client";
+import { ComponentContext } from "@/app/search/providers/filters/filters.provider";
 
-import { ReactElement, useContext, useState } from "react";
-
-import SelectComponent from "@/components/select/select.component";
-
-import { FiltersContext } from "@/app/search/providers/filters/filters.provider";
-
-const options = [
+const locationOptions = [
+  { value: "all", label: "All" },
   { value: "Iran", label: "Iran" },
   { value: "Canada", label: "Canada" },
   { value: "Germany", label: "Germany" },
 ];
 
-export default function LocationFilterComponent(): ReactElement {
-  const { dispatchFilters } = useContext(FiltersContext);
-  const [selectedLocation, setSelectedLocation] = useState("Location");
-
-  const changeHandler = (value: string): void => {
-    setSelectedLocation(value);
-    dispatchFilters({ type: "updated_filter", key: "location", value });
-  };
-
-  let selectedOption = options.find(
-    (option) => option.value === selectedLocation,
-  );
-  if (!selectedOption) {
-    selectedOption = {
-      value: "",
-      label: selectedLocation,
-    };
-  }
+export default function LocationFilterComponent() {
   return (
-    <SelectComponent
-      options={options}
-      selectedOption={selectedOption}
-      onSelectedOptionChange={(option) => changeHandler(option.value)}
+    <ComponentContext
+      options={locationOptions}
+      filterKey="location"
+      defaultLabel="location"
+      initialValue="Location"
     />
   );
 }

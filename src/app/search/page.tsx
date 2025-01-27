@@ -34,7 +34,7 @@ export default async function Page({
     <FiltersProvider defaultFilters={defaultFilters}>
       <JobsProvider jobs={jobs}>
         <div className={styles.page}>
-          <div className={styles.search_content}>
+          <div className={styles["search-content"]}>
             <GlobalSearchBoxComponent />
             <div className={styles.filters}>
               <CompanyFilterComponent />
@@ -45,7 +45,7 @@ export default async function Page({
             </div>
           </div>
           <div className={styles.divider}></div>
-          <main className={styles.main}>
+          <main>
             <ListsComponent />
             <DetailsComponent />
           </main>

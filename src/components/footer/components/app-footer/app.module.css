@@ -1,0 +1,16 @@
+.app {
+  width: 9rem;
+  display: grid;
+  align-items: center;
+  height: 6rem;
+
+  .app-button {
+    background-color: transparent;
+    color: var(--color-primary);
+    padding: 0.5rem 1rem;
+    border: 1px solid currentcolor;
+    border-radius: var(--border-radius-circle);
+    font-weight: 700;
+    cursor: pointer;
+  }
+}

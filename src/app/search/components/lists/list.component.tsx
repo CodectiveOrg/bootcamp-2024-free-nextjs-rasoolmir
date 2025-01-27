@@ -19,13 +19,15 @@ export default function ListsComponent(): ReactElement {
     <ul className={styles.lists}>
       {filteredJobs.map((job) => (
         <li key={job.id}>
-          <div className={styles.header}>
+          <header>
             <div className={styles.company}>
-              <Image src={job.image} alt="job image" width={24} height={24} />
+              <div className={styles["company-image"]}>
+                <Image src={job.image} alt="job image" width={24} height={24} />
+              </div>
               <span>{job.company}</span>
             </div>
             <MingcuteBookmarkLine />
-          </div>
+          </header>
           <div className={styles.details}>
             <Link href={`/job/${job.id}`}>
               <h2>{job.title}</h2>
@@ -35,14 +37,14 @@ export default function ListsComponent(): ReactElement {
               {job.location} {job.jobType}
             </span>
           </div>
-          <div className={styles.footer}>
+          <footer>
             {job.badges?.map((badge) => (
               <div key={badge} className={styles.badge}>
                 {badge}
               </div>
-            )) || null}
+            ))}
             <span>{job.datePosted}</span>
-          </div>
+          </footer>
         </li>
       ))}
     </ul>

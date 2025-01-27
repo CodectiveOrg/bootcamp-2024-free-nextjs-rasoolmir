@@ -17,12 +17,12 @@ export default function HeaderComponent(): ReactElement {
   return (
     <header className={styles.header}>
       <div className={styles.top}>
-        <div className={styles.top_right}>
+        <div className={styles.logo}>
           <Link href="/">
             <JobiorLogo />
           </Link>
         </div>
-        <div className={styles.top_left}>
+        <div className={styles.btns}>
           <Link href="/empoloyers" className={styles.empoloyers}>
             Empoloyers
           </Link>

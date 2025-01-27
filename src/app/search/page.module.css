@@ -4,30 +4,23 @@
   align-items: start;
   gap: 1rem;
   margin-block: 2rem;
-}
-.search_content {
-  display: grid;
 
+  main {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    gap: 1rem;
+  }
+}
+.search-content {
   .filters {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    height: 2.5px;
-    width: 100px;
-    display: flex;
-    gap: 0.6rem;
-    height: 2.5rem;
-    margin-left: 16.4rem;
+    width: 6.25rem;
+    margin: 1rem 16rem;
   }
 }
 .divider {
   border: 1px solid var(--neutral-shade-90);
-  margin: 20px 0;
-}
-.main {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  align-items: start;
-  gap: 1rem;
 }
