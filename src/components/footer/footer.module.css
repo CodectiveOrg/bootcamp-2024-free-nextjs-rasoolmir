@@ -1,51 +1,18 @@
 .footer {
-  background-color: var(--color-gray-12);
-
   display: grid;
-  grid-template-areas: "writings visuals" "copy copy";
+  grid-template-areas: "footer-top" "footer-bottom";
   column-gap: 1rem;
   row-gap: 2rem;
-
   padding-block: 1rem;
+  border-top: 1px solid var(--neutral-shade-90);
 
-  .writings {
-    grid-area: writings;
-
-    .logo {
-      margin-block-end: 0.25rem;
-
-      font-size: var(--fz-600);
-      font-weight: 700;
-    }
-  }
-
-  .visuals {
-    grid-area: visuals;
-
+  .footer-top {
+    grid-area: footer_top;
     display: grid;
-    justify-items: center;
-    gap: 1rem;
-
-    .certificates {
-      display: flex;
-      gap: 2rem;
-    }
-
-    .socials {
-      display: flex;
-      gap: 1rem;
-
-      > li {
-        a {
-          font-size: var(--fz-500);
-        }
-      }
-    }
+    grid-template-columns: 2fr 6fr 2fr;
   }
 
-  .copy {
-    grid-area: copy;
-
-    text-align: center;
+  .footer-bottom {
+    grid-area: footer_bottom;
   }
 }

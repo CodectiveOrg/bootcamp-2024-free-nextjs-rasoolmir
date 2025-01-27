@@ -1,42 +1,77 @@
 .header {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-
+  box-shadow: var(--neutral-shade-80);
+  display: grid;
   padding-block: 1rem;
 
-  nav {
-    > ul {
-      display: flex;
-      gap: 2rem;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    height: 3.5rem;
+    border-bottom: 1px solid var(--neutral-shade-90);
 
-      > li {
-        a {
-          &.active {
-            color: var(--color-primary);
-          }
-        }
+    .logo {
+      width: 5.6rem;
+    }
+
+    .btns {
+      display: flex;
+      gap: 0.6rem;
+      height: 2.3rem;
+      align-items: center;
+
+      .empoloyers {
+        color: var(--neutral-shade-40);
+        text-align: center;
+      }
+
+      .divider {
+        background-color: var(--neutral-shade-80);
+        block-size: 2em;
+        inline-size: 1px;
+      }
+
+      .cta {
+        display: flex;
+        align-items: center;
+        background-color: var(--primary-shade-05);
+        color: var(--neutral-100);
+        margin-inline-start: auto;
+        padding: 0.5rem;
+        border-radius: var(--border-radius-circle);
+        height: 2rem;
+        border: none;
       }
     }
   }
 
-  .cta {
-    background-color: transparent;
-    color: var(--color-primary);
+  .bottom {
+    background-image: url(/Subheader.png);
+    background-size: cover;
+    background-position: center;
+    height: 3.5rem;
+    border-bottom: 1px solid var(--neutral-shade-90);
+  }
+  nav {
+    height: 100%;
+    > ul {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      > li {
+        a {
+          color: var(--neutral-shade-40);
 
-    margin-inline-start: auto;
-    padding: 0.5rem 1rem;
-
-    border: 1px solid currentcolor;
-    border-radius: var(--border-radius);
-
-    font-weight: 700;
-
-    cursor: pointer;
-
-    &:hover {
-      background-color: var(--color-primary);
-      color: var(--color-primary-opposite);
+          &:hover {
+            color: var(--primary-100);
+          }
+          &.active {
+            color: var(--primary-100);
+            border-bottom: 1px solid var(--primary-100);
+          }
+        }
+      }
     }
   }
 }

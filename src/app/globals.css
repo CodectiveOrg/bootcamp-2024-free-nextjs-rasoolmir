@@ -1,25 +1,62 @@
 :root {
-  --color-gray-98: hsl(0deg 0% 98%);
-  --color-gray-90: hsl(0deg 0% 90%);
-  --color-gray-80: hsl(0deg 0% 80%);
-  --color-gray-70: hsl(0deg 0% 70%);
-  --color-gray-40: hsl(0deg 0% 40%);
-  --color-gray-30: hsl(0deg 0% 30%);
-  --color-gray-20: hsl(0deg 0% 20%);
-  --color-gray-16: hsl(0deg 0% 16%);
-  --color-gray-12: hsl(0deg 0% 12%);
-  --color-gray-10: hsl(0deg 0% 10%);
+  /* Primary Colors */
+  --primary-100: hsl(151, 100%, 45%);
+  --primary-shade-80: hsl(151, 94%, 38%);
+  --primary-shade-60: hsl(151, 85%, 32%);
+  --primary-shade-40: hsl(151, 72%, 25%);
+  --primary-shade-10: hsl(151, 30%, 15%);
+  --primary-shade-05: hsl(150, 100%, 2%);
 
-  --color-default-background: var(--color-gray-10);
-  --color-default-foreground: var(--color-gray-98);
+  --primary-tint-80: hsl(151, 82%, 56%);
+  --primary-tint-60: hsl(151, 82%, 67%);
+  --primary-tint-40: hsl(151, 82%, 78%);
+  --primary-tint-30: hsl(150, 83%, 84%);
+  --primary-tint-20: hsl(151, 82%, 89%);
+  --primary-tint-10: hsl(150, 79%, 95%);
+  --primary-tint-03: hsl(154, 78%, 98%);
+  --primary-tint-02: hsl(150, 67%, 99%);
 
-  --color-primary: hsl(120deg 50% 48%);
-  --color-primary-fade: hsl(120deg 50% 96%);
-  --color-primary-lighter: hsl(120deg 50% 52%);
-  --color-primary-darker: hsl(120deg 50% 44%);
-  --color-primary-opposite: var(--color-gray-10);
+  /* Neutral Colors */
+  --neutral-100: hsl(0, 0%, 100%);
+  --neutral-shade-90: hsl(144, 5%, 82%);
+  --neutral-shade-80: hsl(156, 4%, 73%);
+  --neutral-shade-70: hsl(150, 2%, 64%);
+  --neutral-shade-60: hsl(160, 1%, 55%);
+  --neutral-shade-50: hsl(140, 1%, 47%);
+  --neutral-shade-40: hsl(150, 1%, 38%);
+  --neutral-shade-30: hsl(120, 1%, 29%);
+  --neutral-shade-20: hsl(180, 1%, 20%);
+  --neutral-shade-10: hsl(120, 2%, 12%);
 
-  --border-radius: 0.875rem;
+  --neutral-tint-80: hsl(150, 11%, 93%);
+  --neutral-tint-60: hsl(150, 14%, 95%);
+  --neutral-tint-30: hsl(150, 14%, 97%);
+  --neutral-tint-10: hsl(120, 14%, 99%);
+
+  /* Accept Colors */
+  --accept: hsl(156, 11%, 91%);
+  --accept-shade-40: hsl(116, 100%, 16%);
+  --accept-tint-40: hsl(115, 65%, 76%);
+
+  /* ERROR Colors */
+  --error: hsl(0, 100%, 46%);
+  --error-shade-40: hsl(0, 100%, 18%);
+  --error-tint-40: hsl(0, 86%, 95%);
+
+  /* Warning Colors */
+  --warning: hsl(156, 11%, 91%);
+  --warning-shade-40: hsl(44, 100%, 24%);
+  --warning-tint-40: hsl(44, 92%, 79%);
+
+  /* Information Color */
+  --information: hsl(156, 11%, 91%);
+
+  /* Link Color */
+  --link: hsl(156, 11%, 91%);
+
+  /* Border Radius */
+  --border-radius-circle: 4rem;
+  --border-radius-square: 0.25rem;
 
   --full-width: 75rem;
   --full-width-padding-inline: calc(max(100% - var(--full-width), 2rem) / 2);
@@ -39,7 +76,9 @@
 }
 
 html {
-  color-scheme: dark;
+  color-scheme: light;
+  accent-color: var(--primary-100);
+  caret-color: var(--primary-100);
 }
 
 input,
@@ -61,7 +100,7 @@ ul {
 }
 
 p {
-  color: var(--color-gray-80);
+  color: var(--neutral-shade-50);
 }
 
 a {
@@ -71,8 +110,8 @@ a {
 }
 
 body {
-  background-color: var(--color-default-background);
-  color: var(--color-default-foreground);
+  background-color: var(--neutral-100);
+  color: var(--neutral-shade-20);
 
   display: grid;
   grid-template-rows: auto 1fr auto auto;
@@ -87,7 +126,7 @@ body {
   }
 
   .tagline {
-    background-color: var(--color-gray-16);
+    background-color: var(--neutral-shade-20);
     padding-block: 1rem;
     text-align: center;
   }

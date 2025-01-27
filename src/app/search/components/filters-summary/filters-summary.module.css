@@ -1,0 +1,15 @@
+.filters-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 6rem;
+
+  button {
+    background-color: var(--color-danger);
+    color: var(--error);
+    padding: 0.25rem 0.5rem;
+    border: none;
+    font-size: var(--fz-300);
+    cursor: pointer;
+  }
+}

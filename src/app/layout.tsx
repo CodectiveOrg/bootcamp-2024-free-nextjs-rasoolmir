@@ -16,8 +16,8 @@ const vazirmatn = Vazirmatn({
 });
 
 export const metadata: Metadata = {
-  title: "دکتر یاب",
-  description: "پلتفرم جامع جستجوی دکتر و رزرو نوبت آنلاین",
+  title: "Jobior",
+  description: "Junior Job Search Website ",
 };
 
 export default function RootLayout({
@@ -26,13 +26,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>): ReactElement {
   return (
-    <html lang="fa" dir="rtl" className={vazirmatn.className}>
+    <html lang="en" dir="ltr" className={vazirmatn.className}>
       <body>
         <HeaderComponent />
         <main>{children}</main>
-        <p className="tagline">
-          نوبت دهی پزشکی، سامانه نوبت دهی اینترنتی بیمارستان و پزشکان
-        </p>
         <FooterComponent />
       </body>
     </html>

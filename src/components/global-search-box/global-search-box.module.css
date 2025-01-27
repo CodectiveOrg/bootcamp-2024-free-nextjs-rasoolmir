@@ -2,28 +2,30 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-
-  inline-size: min(50rem, 100%);
-
+  inline-size: min(50rem, 70%);
   padding-inline: 1rem;
-
-  border: 1px solid var(--color-gray-20);
-  border-radius: 999rem;
+  border: 1px solid var(--neutral-shade-20);
+  border-radius: var(--border-radius-circle);
+  color: var(--neutral-shade-20);
+  margin: 0 auto;
 
   .prefix {
     display: grid;
     align-items: center;
-
-    font-size: var(--fz-500);
+    font-size: 1.5rem;
+    background-color: var(--primary-tint_30);
+    color: var(--neutral-shade-10);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--border-radius-circle);
+    padding: 0.4rem;
   }
 
   input {
     flex: 1 1 0;
-
+    color: var(--neutral-shade-20);
     background-color: transparent;
-
     padding: 1rem;
-
     border: none;
 
     &:focus {
@@ -32,7 +34,7 @@
   }
 
   .divider {
-    background-color: var(--color-gray-20);
+    background-color: var(--neutral-shade-90);
 
     block-size: 2em;
     inline-size: 1px;
@@ -41,7 +43,7 @@
   .suffix {
     button {
       background-color: transparent;
-
+      color: var(--neutral-shade-20);
       display: flex;
       align-items: center;
       gap: 0.25rem;
@@ -55,19 +57,12 @@
 
       svg {
         font-size: 1.5em;
-      }
-
-      &:hover {
-        background-color: var(--color-gray-16);
+        color: var(--neutral-shade-20);
       }
     }
   }
 
   &:focus-within {
-    border-color: var(--color-primary);
-
-    .prefix {
-      color: var(--color-primary);
-    }
+    border: 1px solid var(--primary-100);
   }
 }
