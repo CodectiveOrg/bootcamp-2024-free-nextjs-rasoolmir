@@ -13,7 +13,7 @@ import { JobsContext } from "@/app/search/providers/jobs/jobs.provider";
 import styles from "./list.module.css";
 
 export default function ListsComponent(): ReactElement {
-  const { filteredJobs } = useContext(JobsContext);
+  const { filteredJobs, setSelectedJobId } = useContext(JobsContext);
 
   return (
     <ul className={styles.lists}>
@@ -29,7 +29,14 @@ export default function ListsComponent(): ReactElement {
             <MingcuteBookmarkLine />
           </header>
           <div className={styles.details}>
-            <Link href={`/job/${job.id}`}>
+            <h2
+              onClick={() => setSelectedJobId(job.id)}
+              className={styles["desktop-link"]}
+            >
+              {job.title}
+            </h2>
+
+            <Link href={`/job/${job.id}`} className={styles["mobile-link"]}>
               <h2>{job.title}</h2>
             </Link>
 

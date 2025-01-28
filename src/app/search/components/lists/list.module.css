@@ -47,6 +47,14 @@
       text-overflow: ellipsis;
       text-wrap: nowrap;
 
+      .desktop-link {
+        display: block;
+      }
+
+      .mobile-link {
+        display: none;
+      }
+
       h2 {
         color: var(--neutral-shade-10);
       }
