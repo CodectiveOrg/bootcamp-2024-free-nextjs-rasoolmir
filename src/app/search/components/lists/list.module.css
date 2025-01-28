@@ -24,9 +24,15 @@
         .company-image Image {
           min-block-size: 100%;
           block-size: 0;
-          object-fit: cover;
-          border: 1px solid var(--neutral-shade-50);
-          border-radius: var(--border-radius-circle);
+
+          Image {
+            block-size: 100%;
+            inline-size: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border: 1px solid var(--neutral-shade-50);
+            border-radius: var(--border-radius-circle);
+          }
         }
 
         span {
