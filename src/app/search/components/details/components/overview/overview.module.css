@@ -1,0 +1,47 @@
+.overview {
+  height: 32rem;
+  .details-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 2;
+    margin-bottom: 2rem;
+
+    h2 {
+      margin: 1.5rem 0;
+    }
+    .first-text,
+    second-text {
+      h3 {
+        display: block;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .overview-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+
+    .first-image,
+    .second-image {
+      min-block-size: 100%;
+      block-size: 0;
+      transition: transform 0.3s ease;
+      gap: 0.5rem;
+
+      Image {
+        block-size: 100%;
+        inline-size: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: var(--border-radius-square);
+      }
+    }
+
+    .second-image {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
