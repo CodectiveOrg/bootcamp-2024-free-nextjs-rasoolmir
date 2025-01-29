@@ -1,18 +1,13 @@
 .footer {
   display: grid;
-  grid-template-areas: "footer-top" "footer-bottom";
-  column-gap: 1rem;
-  row-gap: 2rem;
   padding-block: 1rem;
   border-top: 1px solid var(--neutral-shade-90);
 
   .footer-top {
-    grid-area: footer_top;
     display: grid;
     grid-template-columns: 2fr 6fr 2fr;
   }
 
   .footer-bottom {
-    grid-area: footer_bottom;
   }
 }
