@@ -22,13 +22,12 @@ type ContextValue = {
 
 export const JobsContext = createContext<ContextValue>({
   filteredJobs: [],
-  selectedJobId: null, 
+  selectedJobId: null,
   setSelectedJobId: () => {},
 });
 
 type Props = PropsWithChildren & {
   jobs: JobModel[];
-
 };
 
 export default function JobsProvider({ children, jobs }: Props): ReactElement {
@@ -36,7 +35,6 @@ export default function JobsProvider({ children, jobs }: Props): ReactElement {
 
   const [filteredJobs, setFilteredJobs] = useState<JobModel[]>([]);
   const [selectedJobId, setSelectedJobId] = useState<string | null>(null);
-
 
   const isVisible = useCallback(
     (job: JobModel): boolean => {
@@ -57,15 +55,15 @@ export default function JobsProvider({ children, jobs }: Props): ReactElement {
   }, [isVisible, jobs]);
 
   return (
-  <JobsContext.Provider
-    value={{
-      filteredJobs,
-      selectedJobId,
-      setSelectedJobId,
-    }}
+    <JobsContext.Provider
+      value={{
+        filteredJobs,
+        selectedJobId,
+        setSelectedJobId,
+      }}
     >
-    {children}
-  </JobsContext.Provider>
+      {children}
+    </JobsContext.Provider>
   );
 }
 

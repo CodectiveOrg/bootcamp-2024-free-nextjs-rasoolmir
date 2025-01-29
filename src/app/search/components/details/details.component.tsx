@@ -14,7 +14,7 @@ export default function JobDetails(): ReactElement {
   const { filteredJobs, selectedJobId } = useContext(JobsContext);
 
   const job = filteredJobs.find((job) => job.id === selectedJobId);
- 
+
   if (!job) {
     return (
       <div className={styles["select-ads"]}>
@@ -61,7 +61,7 @@ export default function JobDetails(): ReactElement {
             </span>
           </div>
           <button className={styles.cta}>
-		  <MdiLightningBolt />
+            <MdiLightningBolt />
             {job.badges?.map((badge) => (
               <div key={badge} className={styles.badge}>
                 {badge}
@@ -70,29 +70,25 @@ export default function JobDetails(): ReactElement {
           </button>
         </div>
         <div className={styles["header-bottom"]}>
-          <h3>Where you do it:</h3> 
-		  <p>Maya</p>
+          <h3>Where you do it:</h3>
+          <p>Maya</p>
           <h3>The Interview Process:</h3>{" "}
-          <p>
-            It will have 2 stages that include a 45 min HR chat
-          </p>
+          <p>It will have 2 stages that include a 45 min HR chat</p>
           <h3>Tools:</h3> <p>Figma</p>
           <h3>Reporting to:</h3>
           <p>Design Manager, Bruno Mota</p>
           <h3>Your team:</h3>
-          <p>
-            You will mainly be part of a UX Designer’s team
-          </p>
+          <p>You will mainly be part of a UX Designer’s team</p>
         </div>
       </header>
 
       <div className={styles.category}>
-      {categories.map((category) => (
-        <button key={category.id} onClick={() => handleScrollTo(category.id)}>
-          {category.label}
-        </button>
-      ))}
-    </div>
+        {categories.map((category) => (
+          <button key={category.id} onClick={() => handleScrollTo(category.id)}>
+            {category.label}
+          </button>
+        ))}
+      </div>
 
       <div className={styles["job-description"]} id="job-description">
         <h2> Job Description</h2>
@@ -176,5 +172,4 @@ export default function JobDetails(): ReactElement {
       </div>
     </div>
   );
-  
 }
