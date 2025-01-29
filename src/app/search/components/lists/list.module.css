@@ -21,7 +21,7 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        .company-image{
+        .company-image {
           min-block-size: 100%;
           block-size: 0;
 
