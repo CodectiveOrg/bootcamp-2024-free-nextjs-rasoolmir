@@ -12,7 +12,7 @@ import JobTypeFilterComponent from "@/app/search/components/jobType-filter/jobTy
 import LocationFilterComponent from "@/app/search/components/location-filter/location-filter.component";
 import FiltersSummaryComponent from "@/app/search/components/filters-summary/filters-summary.component";
 import ListsComponent from "@/app/search/components/lists/list.component";
-import DetailsComponent from "@/app/search/components/details/detailscomponent";
+import DetailsComponent from "@/app/search/components/details/details.component";
 
 import FiltersProvider from "@/app/search/providers/filters/filters.provider";
 import JobsProvider from "@/app/search/providers/jobs/jobs.provider";
