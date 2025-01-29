@@ -18,7 +18,7 @@ export default function JobDetails(): ReactElement {
   if (!job) {
     return (
       <div className={styles["select-ads"]}>
-        No advertisement has been selected. Please select the desired
+        No advertisement has been selected.<br /> Please select the desired
         advertisement to display
       </div>
     );
