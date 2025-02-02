@@ -27,7 +27,7 @@ export default async function Page({ params }: Props): Promise<ReactElement> {
       <header>
         <div className={styles.company}>
           <div className={styles["company-image"]}>
-            <Image src={job.image} alt="job image" width={24} height={24} />
+            <Image src={job.image} alt="logo company" width={24} height={24} />
           </div>
           <span>{job.company}</span>
         </div>
@@ -56,7 +56,7 @@ export default async function Page({ params }: Props): Promise<ReactElement> {
       setTimeout(() => {
         const result = jobs.find((x): boolean => x.id === id);
         resolve(result);
-      }, 4000);
+      }, 2000);
     });
   }
 }

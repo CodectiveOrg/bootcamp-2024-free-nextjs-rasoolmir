@@ -2,32 +2,30 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  inline-size: min(50rem, 100%);
+  inline-size: min(50rem, 70%);
   padding-inline: 1rem;
-  color: var(--neutral-shade-20);
   border: 1px solid var(--neutral-shade-20);
   border-radius: var(--border-radius-circle);
-  margin:0 auto;
+  color: var(--neutral-shade-20);
+  margin: 0 auto;
 
   .prefix {
     display: grid;
     align-items: center;
-    font-size: 1.5em;
-	background-color: var(--primary-tint-30);
+    font-size: 1.5rem;
+    background-color: var(--primary-tint_30);
     color: var(--neutral-shade-10);
-	border-radius: var(--border-radius-circle);
-	width: 2.5rem;
+    width: 2.5rem;
     height: 2.5rem;
-	padding: 0.4rem;
+    border-radius: var(--border-radius-circle);
+    padding: 0.4rem;
   }
 
   input {
     flex: 1 1 0;
-
+    color: var(--neutral-shade-20);
     background-color: transparent;
-	color: var(--neutral-shade-20);
     padding: 1rem;
-
     border: none;
 
     &:focus {
@@ -36,7 +34,8 @@
   }
 
   .divider {
-	background-color: var(--neutral-shade-90);
+    background-color: var(--neutral-shade-90);
+
     block-size: 2em;
     inline-size: 1px;
   }
@@ -44,7 +43,7 @@
   .suffix {
     button {
       background-color: transparent;
-	  color: var(--neutral-shade-20);
+      color: var(--neutral-shade-20);
       display: flex;
       align-items: center;
       gap: 0.25rem;
@@ -52,26 +51,18 @@
       padding: 0.5rem 0.5rem;
 
       border: none;
-      border-radius: var(--border-radius-circle);
+      border-radius: var(--border-radius);
 
       cursor: pointer;
 
       svg {
         font-size: 1.5em;
-		color: var(--neutral-shade-20);
-      }
-
-      &:hover {
-        background-color: var(--color-surface-300);
+        color: var(--neutral-shade-20);
       }
     }
   }
 
   &:focus-within {
-    border-color: var(--primary-100);
-
-    .prefix {
-      color: var(--primary-100);
-    }
+    border: 1px solid var(--primary-100);
   }
 }

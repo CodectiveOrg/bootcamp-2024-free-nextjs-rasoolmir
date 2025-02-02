@@ -25,7 +25,7 @@
           min-block-size: 100%;
           block-size: 0;
 
-          Image {
+          img {
             block-size: 100%;
             inline-size: auto;
             aspect-ratio: 1 / 1;
@@ -37,7 +37,7 @@
 
         span {
           color: var(--neutral-shade-60);
-          text-align: left;
+          text-align: start;
         }
       }
     }
