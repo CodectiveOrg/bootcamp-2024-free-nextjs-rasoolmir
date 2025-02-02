@@ -7,25 +7,25 @@
   color: var(--neutral-shade-20);
   border: 1px solid var(--neutral-shade-20);
   border-radius: var(--border-radius-circle);
-  margin:0 auto;
+  margin: 0 auto;
 
   .prefix {
     display: grid;
     align-items: center;
     font-size: 1.5em;
-	background-color: var(--primary-tint-30);
+    background-color: var(--primary-tint-30);
     color: var(--neutral-shade-10);
-	border-radius: var(--border-radius-circle);
-	width: 2.5rem;
+    border-radius: var(--border-radius-circle);
+    width: 2.5rem;
     height: 2.5rem;
-	padding: 0.4rem;
+    padding: 0.4rem;
   }
 
   input {
     flex: 1 1 0;
 
     background-color: transparent;
-	color: var(--neutral-shade-20);
+    color: var(--neutral-shade-20);
     padding: 1rem;
 
     border: none;
@@ -36,7 +36,7 @@
   }
 
   .divider {
-	background-color: var(--neutral-shade-90);
+    background-color: var(--neutral-shade-90);
     block-size: 2em;
     inline-size: 1px;
   }
@@ -44,7 +44,7 @@
   .suffix {
     button {
       background-color: transparent;
-	  color: var(--neutral-shade-20);
+      color: var(--neutral-shade-20);
       display: flex;
       align-items: center;
       gap: 0.25rem;
@@ -58,7 +58,7 @@
 
       svg {
         font-size: 1.5em;
-		color: var(--neutral-shade-20);
+        color: var(--neutral-shade-20);
       }
 
       &:hover {

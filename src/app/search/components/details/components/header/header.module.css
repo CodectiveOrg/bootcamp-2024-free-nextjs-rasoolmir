@@ -63,7 +63,7 @@
   }
 
   .header-bottom {
-    margin: 1rem 0;
+    margin-block: 1rem;
     line-height: 1.6;
     text-align: start;
     color: var(--neutral-shade-20);

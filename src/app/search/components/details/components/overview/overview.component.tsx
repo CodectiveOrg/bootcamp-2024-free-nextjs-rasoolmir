@@ -24,13 +24,38 @@ export default function OverviewComponent(): ReactElement {
         </div>
         <div className={styles["overview-images"]}>
           <div className={styles["first-image"]}>
-            <Image src="/ad1.png" alt="ad image" width={260} height={230} />
+            <Image
+              src="/images/detail-image-1.png"
+              alt="detail image 1"
+              width={260}
+              height={230}
+            />
           </div>
           <div className={styles["second-image"]}>
-            <Image src="/ad2.png" alt="ad image" width={130} height={110} />
-            <Image src="/ad3.png" alt="ad image" width={130} height={110} />
-            <Image src="/ad4.png" alt="ad image" width={130} height={110} />
-            <Image src="/ad5.png" alt="ad image" width={130} height={110} />
+            <Image
+              src="/images/detail-image-2.png"
+              alt="detail image 2"
+              width={130}
+              height={110}
+            />
+            <Image
+              src="/images/detail-image-3.png"
+              alt="detail image 3"
+              width={130}
+              height={110}
+            />
+            <Image
+              src="/images/detail-image-4.png"
+              alt="detail image 4"
+              width={130}
+              height={110}
+            />
+            <Image
+              src="/images/detail-image-5.png"
+              alt="detail image 5"
+              width={130}
+              height={110}
+            />
           </div>
         </div>
       </div>

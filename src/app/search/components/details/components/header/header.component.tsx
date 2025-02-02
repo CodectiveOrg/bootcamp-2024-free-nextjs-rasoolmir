@@ -27,7 +27,12 @@ export default function HeaderComponent(): ReactElement {
         <div className={styles["header-top"]}>
           <div className={styles.company}>
             <div className={styles["company-image"]}>
-              <Image src={job.image} alt="logo company" width={32} height={32} />
+              <Image
+                src={job.image}
+                alt="logo company"
+                width={32}
+                height={32}
+              />
             </div>
             <span>{job.company}</span>
           </div>

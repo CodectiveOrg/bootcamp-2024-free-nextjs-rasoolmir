@@ -7,7 +7,7 @@
     margin-bottom: 2rem;
 
     h2 {
-      margin: 1.5rem 0;
+      margin-block: 1.5rem;
     }
     .first-text,
     second-text {

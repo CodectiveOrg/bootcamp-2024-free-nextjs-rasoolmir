@@ -1,5 +1,5 @@
 .requirement {
-  margin: 0.5rem 0;
+  margin-block: 0.5rem;
   border-bottom: 1px solid var(--neutral-shade-70);
   line-height: 1.6;
   text-align: start;
@@ -8,7 +8,7 @@
     color: var(--neutral-shade-70);
   }
   h3 {
-    margin: 1.5rem 0;
+    margin-block: 1.5rem;
   }
 
   > ul {
