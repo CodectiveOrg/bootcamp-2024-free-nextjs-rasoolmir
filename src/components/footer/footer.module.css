@@ -5,9 +5,11 @@
 
   .footer-top {
     display: grid;
-    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-columns: auto 6fr auto;
+    padding-block: 1rem;
   }
 
   .footer-bottom {
+    msrgin-block: 0.5rem;
   }
 }

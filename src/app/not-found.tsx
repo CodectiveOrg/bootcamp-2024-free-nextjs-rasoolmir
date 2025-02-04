@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 
 import Image from "next/image";
 
-import notFoundImage from "@/assets/illustrations/not-found.svg";
+import notFoundImage from "@/assets/illustrations/not-found.png";
 
 import GlobalSearchBoxComponent from "@/components/global-search-box/global-search-box.component";
 
@@ -13,10 +13,10 @@ export default function NotFound(): ReactElement {
     <div className={styles["not-found"]}>
       <div className={styles.writings}>
         <div className={styles["status-code"]}>404</div>
-        <h1>صفحه‌ی مورد نظر پیدا نشد!</h1>
+        <h1>Oops! Page Not Found</h1>
         <p>
-          با عرض پوزش، لطفاً از طریق کادر جستجو، پزشک یا مرکز درمانی مورد نظر
-          خود را جستجو کنید.
+          Sorry, Find new opportunities and manage Your job search progress
+          here.
         </p>
       </div>
       <div className={styles.visuals}>

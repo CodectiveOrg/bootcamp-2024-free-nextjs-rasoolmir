@@ -16,25 +16,25 @@ import { FiltersContext } from "@/app/search/providers/filters/filters.provider"
 
 type ContextValue = {
   filteredJobs: JobModel[];
-  selectedJobId: string | null;
-  setSelectedJobId: (id: string | null) => void;
+  job: JobModel | null;
+  setJob: (job: JobModel | null) => void;
 };
-
-export const JobsContext = createContext<ContextValue>({
-  filteredJobs: [],
-  selectedJobId: null,
-  setSelectedJobId: () => {},
-});
 
 type Props = PropsWithChildren & {
   jobs: JobModel[];
 };
 
+export const JobsContext = createContext<ContextValue>({
+  filteredJobs: [],
+  job: null,
+  setJob: () => {},
+});
+
 export default function JobsProvider({ children, jobs }: Props): ReactElement {
   const { filters } = useContext(FiltersContext);
 
   const [filteredJobs, setFilteredJobs] = useState<JobModel[]>([]);
-  const [selectedJobId, setSelectedJobId] = useState<string | null>(null);
+  const [job, setJob] = useState<JobModel | null>(null);
 
   const isVisible = useCallback(
     (job: JobModel): boolean => {
@@ -58,8 +58,8 @@ export default function JobsProvider({ children, jobs }: Props): ReactElement {
     <JobsContext.Provider
       value={{
         filteredJobs,
-        selectedJobId,
-        setSelectedJobId,
+        job,
+        setJob,
       }}
     >
       {children}

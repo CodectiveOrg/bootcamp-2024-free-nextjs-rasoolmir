@@ -1,17 +1,17 @@
 .overview {
-  height: 32rem;
+  height: 35rem;
   .details-text {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     line-height: 2;
     margin-bottom: 2rem;
 
-    h2 {
+    > h2 {
       margin-block: 1.5rem;
     }
     .first-text,
     second-text {
-      h3 {
+      > h3 {
         display: block;
         font-weight: bold;
       }
@@ -30,10 +30,8 @@
       transition: transform 0.3s ease;
       gap: 0.5rem;
 
-      img {
-        block-size: 100%;
+      > img {
         inline-size: auto;
-        aspect-ratio: 1 / 1;
         object-fit: cover;
         border-radius: var(--border-radius-square);
       }

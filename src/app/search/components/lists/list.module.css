@@ -7,7 +7,13 @@
     border-bottom-color: var(--neutral-shade-90);
 
     &:hover {
-      border-color: var(--neutral-shade-60);
+      box-shadow: 0 0 0.5rem var(--neutral-shade-60);
+      border-radius: var(--border-radius-square);
+      background-color: var(--primary-tint-02);
+    }
+
+    &.selected {
+      box-shadow: 0 0 0.5rem var(--neutral-shade-60);
       border-radius: var(--border-radius-square);
       background-color: var(--primary-tint-02);
     }
@@ -19,23 +25,19 @@
 
       .company {
         display: flex;
-        align-items: center;
         gap: 0.5rem;
+
         .company-image {
           min-block-size: 100%;
           block-size: 0;
 
-          img {
-            block-size: 100%;
+          > img {
             inline-size: auto;
-            aspect-ratio: 1 / 1;
             object-fit: cover;
-            border: 1px solid var(--neutral-shade-50);
-            border-radius: var(--border-radius-circle);
           }
         }
 
-        span {
+        > span {
           color: var(--neutral-shade-60);
           text-align: start;
         }
@@ -47,15 +49,7 @@
       text-overflow: ellipsis;
       text-wrap: nowrap;
 
-      .desktop-link {
-        display: block;
-      }
-
-      .mobile-link {
-        display: none;
-      }
-
-      h2 {
+      > h2 {
         color: var(--neutral-shade-10);
       }
 
@@ -74,7 +68,7 @@
         border: 1px solid var(--primary-shade-80);
       }
 
-      span {
+      > span {
         color: var(--neutral-shade-20);
       }
     }

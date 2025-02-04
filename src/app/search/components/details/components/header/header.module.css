@@ -10,20 +10,17 @@
 
     .company {
       display: flex;
-      align-items: center;
       gap: 0.5rem;
 
       .company-image {
         min-block-size: 100%;
         block-size: 0;
 
-        img {
+        > img {
           block-size: 100%;
           inline-size: auto;
-          aspect-ratio: 1 / 1;
+
           object-fit: cover;
-          border: 1px solid var(--neutral-shade-50);
-          border-radius: var(--border-radius-circle);
         }
       }
 
@@ -38,7 +35,7 @@
     line-height: 1.6;
 
     .title {
-      h2 {
+      > h2 {
         color: var(--neutral-shade-10);
       }
       span {
@@ -68,8 +65,9 @@
     text-align: start;
     color: var(--neutral-shade-20);
 
-    h3 {
+    > h3 {
       font-weight: bold;
+      margin-block-start: 1rem;
     }
   }
 }

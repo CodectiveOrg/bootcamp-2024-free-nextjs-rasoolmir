@@ -5,7 +5,7 @@
   gap: 1rem;
   font-weight: 600;
 
-  button {
+  > a {
     padding: 0.5rem;
     border: none;
     background-color: transparent;

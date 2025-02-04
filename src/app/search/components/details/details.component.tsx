@@ -7,14 +7,13 @@ import HeaderComponent from "@/app/search/components/details/components/header/h
 import CategoryComponent from "@/app/search/components/details/components/category/category.component";
 import JobdescriptionComponent from "@/app/search/components/details/components/job-description/jobdescription.component";
 import RequirementComponent from "@/app/search/components/details/components/requirement/requirement.component";
+import BenefitComponent from "@/app/search/components/details/components/benefit/benefit.component";
 import OverviewComponent from "@/app/search/components/details/components/overview/overview.component";
 
 import styles from "./details.module.css";
 
 export default function DetailsComponent(): ReactElement {
-  const { filteredJobs, selectedJobId } = useContext(JobsContext);
-
-  const job = filteredJobs.find((job) => job.id === selectedJobId);
+  const { job } = useContext(JobsContext);
 
   if (!job) {
     return (
@@ -31,6 +30,7 @@ export default function DetailsComponent(): ReactElement {
       <CategoryComponent />
       <JobdescriptionComponent />
       <RequirementComponent />
+      <BenefitComponent />
       <OverviewComponent />
     </div>
   );

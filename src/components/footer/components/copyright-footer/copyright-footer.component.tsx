@@ -34,7 +34,7 @@ export default function CopyrightFooterComponent(): ReactElement {
           </Link>
         </li>
       </ul>
-      <p>Jobior Copyright©2025</p>
+      <p>Jobior Copyright © 2025</p>
     </div>
   );
 }
