@@ -3,6 +3,8 @@
 import { ReactElement, useContext } from "react";
 import { JobsContext } from "@/app/search/providers/jobs/jobs.provider";
 
+import Image from "next/image";
+
 import HeaderComponent from "@/app/search/components/details/components/header/header.component";
 import CategoryComponent from "@/app/search/components/details/components/category/category.component";
 import JobdescriptionComponent from "@/app/search/components/details/components/job-description/jobdescription.component";
@@ -18,8 +20,16 @@ export default function DetailsComponent(): ReactElement {
   if (!job) {
     return (
       <div className={styles["select-ads"]}>
-        No advertisement has been selected.
-        <br /> Please select the desired advertisement to display
+        <Image
+          src="/images/advertisement-image.jpg"
+          alt="advertisement image"
+          width={300}
+          height={261}
+        />
+        <p>
+          No advertisement has been selected.
+          <br /> Please select the desired advertisement to display
+        </p>
       </div>
     );
   }

@@ -1,5 +1,15 @@
 .select-ads {
-  margin: 0 auto;
+  margin: 5rem auto;
+
+  > img {
+    inline-size: auto;
+    object-fit: cover;
+    border-radius: var(--border-radius-square);
+  }
+
+  > p {
+    text-align: center;
+  }
 }
 
 .details {
