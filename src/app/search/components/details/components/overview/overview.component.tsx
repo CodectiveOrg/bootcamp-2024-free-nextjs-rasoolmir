@@ -2,12 +2,6 @@ import { ReactElement } from "react";
 
 import Image from "next/image";
 
-import detailImage1 from "@/assets/illustrations/detail-image-1.webp";
-import detailImage2 from "@/assets/illustrations/detail-image-2.webp";
-import detailImage3 from "@/assets/illustrations/detail-image-3.webp";
-import detailImage4 from "@/assets/illustrations/detail-image-4.webp";
-import detailImage5 from "@/assets/illustrations/detail-image-5.webp";
-
 import styles from "./overview.module.css";
 
 export default function OverviewComponent(): ReactElement {
@@ -31,7 +25,7 @@ export default function OverviewComponent(): ReactElement {
         <div className={styles["overview-images"]}>
           <div className={styles["first-image"]}>
             <Image
-              src={detailImage1}
+              src="/images/detail-image-1.webp"
               alt="detail image 1"
               width={300}
               height={260}
@@ -39,25 +33,25 @@ export default function OverviewComponent(): ReactElement {
           </div>
           <div className={styles["second-image"]}>
             <Image
-              src={detailImage2}
+              src="/images/detail-image-2.webp"
               alt="detail image 2"
               width={170}
               height={130}
             />
             <Image
-              src={detailImage3}
+              src="/images/detail-image-3.webp"
               alt="detail image 3"
               width={170}
               height={130}
             />
             <Image
-              src={detailImage4}
+              src="/images/detail-image-4.webp"
               alt="detail image 4"
               width={170}
               height={130}
             />
             <Image
-              src={detailImage5}
+              src="/images/detail-image-5.webp"
               alt="detail image 5"
               width={170}
               height={130}
