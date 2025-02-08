@@ -4,7 +4,7 @@ import { ReactElement, useContext, useState } from "react";
 
 import Image from "next/image";
 
-import MingcuteBookmarkLine from "@/icons/MingcuteBookmarkLine";
+import BookMarkComponent from "@/components/bookmark-icon/book-mark.component";
 
 import { JobsContext } from "@/app/search/providers/jobs/jobs.provider";
 
@@ -37,7 +37,7 @@ export default function ListsComponent(): ReactElement {
               </div>
               <span>{job.company}</span>
             </div>
-            <MingcuteBookmarkLine />
+            <BookMarkComponent />
           </header>
           <div className={styles.details}>
             <h2>{job.title}</h2>

@@ -10,6 +10,7 @@
 
     .company {
       display: flex;
+      align-items: center;
       gap: 0.5rem;
 
       .company-image {
@@ -27,6 +28,12 @@
       span {
         color: var(--neutral-shade-60);
       }
+    }
+
+    .header-icons {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
   }
   .header-title {

@@ -4,7 +4,7 @@ import { ReactElement, useContext } from "react";
 import { JobsContext } from "@/app/search/providers/jobs/jobs.provider";
 import Image from "next/image";
 
-import MingcuteBookmarkLine from "@/icons/MingcuteBookmarkLine";
+import BookMarkComponent from "@/components/bookmark-icon/book-mark.component";
 import MingcuteFullscreenFill from "@/icons/MingcuteFullscreenFill";
 import MdiLightningBolt from "@/icons/MdiLightningBolt";
 
@@ -29,7 +29,7 @@ export default function HeaderComponent(): ReactElement {
           <span>{job.company}</span>
         </div>
         <div className={styles["header-icons"]}>
-          <MingcuteBookmarkLine />
+          <BookMarkComponent />
           <MingcuteFullscreenFill />
         </div>
       </div>

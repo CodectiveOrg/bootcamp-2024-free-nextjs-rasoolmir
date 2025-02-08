@@ -1,0 +1,37 @@
+.book-mark {
+  display: flex;
+  align-items: center;
+  outline: none;
+  cursor: default;
+
+  .value {
+    flex: 1 1 0;
+  }
+
+  .caret {
+    transform: translateY(25%);
+  }
+
+  .options {
+    position: absolute;
+    inset-block-start: calc(100% + 0.5rem);
+    inset-inline-start: 0;
+    overflow-y: auto;
+    z-index: 100;
+    max-block-size: 15rem;
+    min-inline-size: 100%;
+    inline-size: max-content;
+
+    .option {
+      padding: 0.25rem 0.5rem;
+      cursor: pointer;
+    }
+  }
+
+  &:not(&.open) {
+    .options {
+      display: none;
+      margin: 0 auto;
+    }
+  }
+}
