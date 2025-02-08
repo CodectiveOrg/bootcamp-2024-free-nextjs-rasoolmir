@@ -1,14 +1,14 @@
 import { JobModel } from "@/models/job.model";
 
-import meta_logo from "@/assets/logo/meta-logo.svg";
-import apple_logo from "@/assets/logo/apple-logo.svg";
-import amazon_logo from "@/assets/logo/amazon-logo.svg";
+import metaLogo from "@/assets/logo/meta-logo.svg";
+import appleLogo from "@/assets/logo/apple-logo.svg";
+import amazonLogo from "@/assets/logo/amazon-logo.svg";
 
 export const jobs: JobModel[] = [
   {
     id: "76b55838",
     title: "Product Designer",
-    image: meta_logo,
+    image: metaLogo,
     company: "Meta",
     isVerified: true,
     location: "Germany",
@@ -20,7 +20,7 @@ export const jobs: JobModel[] = [
   {
     id: "b6ffbd14",
     title: "Service Designer",
-    image: apple_logo,
+    image: appleLogo,
     company: "Apple",
     isVerified: true,
     location: "Iran",
@@ -32,7 +32,7 @@ export const jobs: JobModel[] = [
   {
     id: "61ea57d2",
     title: "UX Designer",
-    image: amazon_logo,
+    image: amazonLogo,
     company: "Amazon",
     isVerified: true,
     location: "Iran",
@@ -44,7 +44,7 @@ export const jobs: JobModel[] = [
   {
     id: "e408016a",
     title: "UI Designer",
-    image: amazon_logo,
+    image: amazonLogo,
     company: "Amazon",
     isVerified: true,
     location: "Canada",
@@ -56,7 +56,7 @@ export const jobs: JobModel[] = [
   {
     id: "1a8daf37",
     title: "Interface Designer",
-    image: apple_logo,
+    image: appleLogo,
     company: "Apple",
     isVerified: true,
     location: "Canada",
@@ -68,7 +68,7 @@ export const jobs: JobModel[] = [
   {
     id: "973ef75f",
     title: "Frontend Developer",
-    image: meta_logo,
+    image: metaLogo,
     company: "Meta",
     isVerified: true,
     location: "Germany",
@@ -80,7 +80,7 @@ export const jobs: JobModel[] = [
   {
     id: "99ee46ce",
     title: "Backend Developer",
-    image: apple_logo,
+    image: appleLogo,
     company: "Apple",
     isVerified: true,
     location: "Germany",

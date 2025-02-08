@@ -3,7 +3,7 @@ import React, { ReactElement, useState } from "react";
 import MingcuteBookmarkLine from "@/icons/MingcuteBookmarkLine";
 import MingcuteBookmarkFill from "@/icons/MingcuteBookmarkFill";
 
-import styles from "./bookmark.module.css";
+import styles from "./book-mark.module.css";
 
 export default function BookMarkComponent(): ReactElement {
   const [isIconOneVisible, setIsIconOneVisible] = useState(true);

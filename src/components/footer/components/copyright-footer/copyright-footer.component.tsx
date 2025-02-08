@@ -7,7 +7,7 @@ import MingcuteSocialXLine from "@/icons/MingcuteSocialXLine";
 import MynauiBrandFacebook from "@/icons/MynauiBrandFacebook";
 import TdesignLogoInstagram from "@/icons/TdesignLogoInstagram";
 
-import styles from "./copyright.module.css";
+import styles from "./copyright-footer.module.css";
 
 export default function CopyrightFooterComponent(): ReactElement {
   return (

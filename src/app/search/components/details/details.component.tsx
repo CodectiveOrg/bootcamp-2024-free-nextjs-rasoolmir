@@ -5,9 +5,11 @@ import { JobsContext } from "@/app/search/providers/jobs/jobs.provider";
 
 import Image from "next/image";
 
+import advertisementSelect from "@/assets/illustrations/advertisement-select.webp";
+
 import HeaderComponent from "@/app/search/components/details/components/header/header.component";
 import CategoryComponent from "@/app/search/components/details/components/category/category.component";
-import JobdescriptionComponent from "@/app/search/components/details/components/job-description/jobdescription.component";
+import JobdescriptionComponent from "@/app/search/components/details/components/job-description/job-description.component";
 import RequirementComponent from "@/app/search/components/details/components/requirement/requirement.component";
 import BenefitComponent from "@/app/search/components/details/components/benefit/benefit.component";
 import OverviewComponent from "@/app/search/components/details/components/overview/overview.component";
@@ -21,7 +23,7 @@ export default function DetailsComponent(): ReactElement {
     return (
       <div className={styles["select-ads"]}>
         <Image
-          src="/images/advertisement-image.jpg"
+          src={advertisementSelect}
           alt="advertisement image"
           width={300}
           height={261}

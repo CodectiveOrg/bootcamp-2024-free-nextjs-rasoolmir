@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-import styles from "./jobdescription.module.css";
+import styles from "./job-description.module.css";
 
 export default function JobdescriptionComponent(): ReactElement {
   return (

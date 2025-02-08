@@ -7,8 +7,8 @@ import { jobs } from "@/mock/jobs";
 import { FiltersType } from "@/types/filters.type";
 
 import CompanyFilterComponent from "@/app/search/components/company-filter/company-filter.component";
-import DatePostedFilterComponent from "@/app/search/components/datePosted-filter/datePosted-filter.component";
-import JobTypeFilterComponent from "@/app/search/components/jobType-filter/jobType-filter.component";
+import DatePostedFilterComponent from "@/app/search/components/date-posted-filter/date-posted-filter.component";
+import JobTypeFilterComponent from "@/app/search/components/job-type-filter/job-type-filter.component";
 import LocationFilterComponent from "@/app/search/components/location-filter/location-filter.component";
 import FiltersSummaryComponent from "@/app/search/components/filters-summary/filters-summary.component";
 import ListsComponent from "@/app/search/components/lists/list.component";

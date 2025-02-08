@@ -3,7 +3,7 @@ import { ReactElement } from "react";
 import MingcuteGooglePlayLine from "@/icons/MingcuteGooglePlayLine";
 import MingcuteAppleLine from "@/icons/MingcuteAppleLine";
 
-import styles from "./app.module.css";
+import styles from "./app-footer.module.css";
 
 export default function AppFooterComponent(): ReactElement {
   return (
