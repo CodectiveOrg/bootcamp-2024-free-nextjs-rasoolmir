@@ -17,8 +17,8 @@
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    width: 6.25rem;
-    margin: 1rem 16rem;
+    width: 30rem;
+    margin: 1rem auto;
   }
 }
 .divider {

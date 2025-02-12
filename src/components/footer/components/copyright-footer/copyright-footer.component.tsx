@@ -7,7 +7,7 @@ import MingcuteSocialXLine from "@/icons/MingcuteSocialXLine";
 import MynauiBrandFacebook from "@/icons/MynauiBrandFacebook";
 import TdesignLogoInstagram from "@/icons/TdesignLogoInstagram";
 
-import styles from "./copyright.module.css";
+import styles from "./copyright-footer.module.css";
 
 export default function CopyrightFooterComponent(): ReactElement {
   return (
@@ -34,7 +34,7 @@ export default function CopyrightFooterComponent(): ReactElement {
           </Link>
         </li>
       </ul>
-      <p>Jobior Copyright©2025</p>
+      <p>Jobior Copyright © 2025</p>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 
 import Link from "next/link";
 
-import styles from "./visuals.module.css";
+import styles from "./visuals-footer.module.css";
 
 export default function VisualsFooterComponent(): ReactElement {
   return (

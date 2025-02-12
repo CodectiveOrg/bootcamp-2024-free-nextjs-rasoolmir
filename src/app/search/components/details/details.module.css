@@ -1,6 +1,24 @@
-.r {
-  width: 35rem;
+.select-ads {
+  margin: 5rem auto;
+
+  > img {
+    inline-size: auto;
+    object-fit: cover;
+    border-radius: var(--border-radius-square);
+  }
+
+  > p {
+    text-align: center;
+  }
+}
+
+.details {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
   border: 1px solid var(--neutral-shade-90);
+  border-bottom: 1px solid var(--neutral-shade-90);
+  margin-block: 1rem;
   border-radius: var(--border-radius-square);
-  height: 100%;
+  background-color: var(--primary-tint-02);
 }

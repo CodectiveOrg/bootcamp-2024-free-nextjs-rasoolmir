@@ -1,0 +1,25 @@
+.loading {
+  background-color: hsl(from var(--neutral-100) h s l / 0.5);
+  backdrop-filter: blur(3px);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .loader {
+    width: 5rem;
+    height: 5rem;
+    border: 3px solid #fff;
+    border-top-color: transparent;
+    border-radius: var(--border-radius-circle);
+    animation: spinner 0.7s linear infinite;
+  }
+
+  @keyframes spinner {
+    from {
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

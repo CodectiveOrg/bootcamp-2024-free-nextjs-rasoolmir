@@ -1,14 +1,14 @@
 import { JobModel } from "@/models/job.model";
 
-import meta_logo from "@/assets/logo/meta_logo.svg";
-import apple_logo from "@/assets/logo/apple_logo.svg";
-import amazon_logo from "@/assets/logo/amazon_logo.svg";
+import metaLogo from "@/assets/logo/meta-logo.svg";
+import appleLogo from "@/assets/logo/apple-logo.svg";
+import amazonLogo from "@/assets/logo/amazon-logo.svg";
 
 export const jobs: JobModel[] = [
   {
-    id: "76b55838-346f",
+    id: "76b55838",
     title: "Product Designer",
-    image: meta_logo,
+    image: metaLogo,
     company: "Meta",
     isVerified: true,
     location: "Germany",
@@ -18,9 +18,9 @@ export const jobs: JobModel[] = [
     remote: "",
   },
   {
-    id: "b6ffbd14-4a54",
+    id: "b6ffbd14",
     title: "Service Designer",
-    image: apple_logo,
+    image: appleLogo,
     company: "Apple",
     isVerified: true,
     location: "Iran",
@@ -30,9 +30,9 @@ export const jobs: JobModel[] = [
     remote: "",
   },
   {
-    id: "61ea57d2-4aef",
+    id: "61ea57d2",
     title: "UX Designer",
-    image: amazon_logo,
+    image: amazonLogo,
     company: "Amazon",
     isVerified: true,
     location: "Iran",
@@ -42,9 +42,9 @@ export const jobs: JobModel[] = [
     remote: "",
   },
   {
-    id: "e408016a-1290",
+    id: "e408016a",
     title: "UI Designer",
-    image: amazon_logo,
+    image: amazonLogo,
     company: "Amazon",
     isVerified: true,
     location: "Canada",
@@ -54,9 +54,9 @@ export const jobs: JobModel[] = [
     badges: [],
   },
   {
-    id: "1a8daf37-714a",
+    id: "1a8daf37",
     title: "Interface Designer",
-    image: apple_logo,
+    image: appleLogo,
     company: "Apple",
     isVerified: true,
     location: "Canada",
@@ -66,9 +66,9 @@ export const jobs: JobModel[] = [
     badges: [],
   },
   {
-    id: "973ef75f-f492",
+    id: "973ef75f",
     title: "Frontend Developer",
-    image: meta_logo,
+    image: metaLogo,
     company: "Meta",
     isVerified: true,
     location: "Germany",
@@ -78,9 +78,9 @@ export const jobs: JobModel[] = [
     remote: "",
   },
   {
-    id: "99ee46ce-c3af",
+    id: "99ee46ce",
     title: "Backend Developer",
-    image: apple_logo,
+    image: appleLogo,
     company: "Apple",
     isVerified: true,
     location: "Germany",

@@ -1,24 +1,35 @@
 "use client";
 
-import { ReactElement, useContext } from "react";
-
-import Link from "next/link";
+import { ReactElement, useContext, useState } from "react";
 
 import Image from "next/image";
 
-import MingcuteBookmarkLine from "@/icons/MingcuteBookmarkLine";
+import BookMarkComponent from "@/components/bookmark-icon/book-mark.component";
 
 import { JobsContext } from "@/app/search/providers/jobs/jobs.provider";
+
+import { JobModel } from "@/models/job.model";
 
 import styles from "./list.module.css";
 
 export default function ListsComponent(): ReactElement {
-  const { filteredJobs } = useContext(JobsContext);
+  const { filteredJobs, setJob } = useContext(JobsContext);
+
+  const [selectedJob, setSelectedJob] = useState<string | null>(null);
+
+  const handleJobClick = (job: JobModel) => {
+    setSelectedJob(job.id);
+    setJob(job);
+  };
 
   return (
     <ul className={styles.lists}>
       {filteredJobs.map((job) => (
-        <li key={job.id}>
+        <li
+          key={job.id}
+          onClick={() => handleJobClick(job)}
+          className={job.id === selectedJob ? styles.selected : ""}
+        >
           <header>
             <div className={styles.company}>
               <div className={styles["company-image"]}>
@@ -26,13 +37,10 @@ export default function ListsComponent(): ReactElement {
               </div>
               <span>{job.company}</span>
             </div>
-            <MingcuteBookmarkLine />
+            <BookMarkComponent />
           </header>
           <div className={styles.details}>
-            <Link href={`/job/${job.id}`}>
-              <h2>{job.title}</h2>
-            </Link>
-
+            <h2>{job.title}</h2>
             <span>
               {job.location} {job.jobType}
             </span>

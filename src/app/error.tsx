@@ -17,19 +17,19 @@ export default function Error({ error, reset }: Props): ReactElement {
   return (
     <div className={styles["error"]}>
       <div className={styles.writings}>
-        <div className={styles["status-code"]}>بدبخت شدیم!</div>
-        <h1>یک خطای غیرمنتظره رخ داده است.</h1>
-        <p>با عرض پوزش، لطفاً با تیم پشتیبانی تماس بگیرید.</p>
+        <div className={styles["status-code"]}>We have become unfortunate!</div>
+        <h1>An unexpected error has occurred</h1>
+        <p>Please contact the support team.</p>
       </div>
       <div className={styles.visuals}>
         <Image src={errorImage} alt="" />
       </div>
       <div className={styles.actions}>
-        <button onClick={reset}>تلاش مجدد</button>
+        <button onClick={reset}>Try again</button>
       </div>
       <div className={styles.trace}>
         <details>
-          <summary>لاگ خطا</summary>
+          <summary>Error log</summary>
           <pre dir="ltr">{error.stack}</pre>
         </details>
       </div>

@@ -1,0 +1,18 @@
+.benefit {
+  margin-block: 0.5rem;
+  border-bottom: 1px solid var(--neutral-shade-70);
+  line-height: 1.6;
+  text-align: start;
+
+  h2 {
+    color: var(--neutral-shade-70);
+  }
+  h3 {
+    margin-block: 0.5rem;
+  }
+
+  > ul {
+    margin: 1rem;
+    list-style-type: disc;
+  }
+}
