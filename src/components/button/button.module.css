@@ -1,0 +1,100 @@
+.button {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  border: none;
+  border-radius: var(--border-radius-circle);
+
+  font-size: 1rem;
+  font-weight: 700;
+  
+  cursor: pointer;
+
+  transition: var(--animation-duration-fast) ease-in-out;
+  transition-property: background-color, color;
+
+  &:not(.inherit) {
+    padding: 0.5rem 1rem;
+
+    svg {
+      font-size: 1.5em;
+    }
+  }
+
+  &.solid {
+    background-color: var(--background-color);
+    color: var(--color);
+
+    &:hover {
+      background-color: var(--background-color-hover);
+    }
+
+    &.default {
+      --background-color: var(--neutral-shade-90);
+      --background-color-hover: var(--primary-tint-80);
+      --color: var(--neutral-100);
+    }
+
+    &.primary {
+      --background-color: var(--primary-shade-80);
+      --background-color-hover: var(--primary-tint-80);
+      --color: var(--neutral-100);
+    }
+
+    &.danger {
+      --background-color: var(--error);
+      --background-color-hover: var(--error-shade-40);
+      --color: var(--error-tint-40);
+    }
+  }
+
+  &.outlined {
+    background-color: var(--background-color);
+    color: var(--color);
+
+    border: 1px solid currentcolor;
+    border-radius: var(--border-radius-circle);
+
+    &:hover {
+      background-color: var(--background-color-hover);
+      color: var(--color-hover);
+    }
+
+    &.default {
+      --background-color: var(--neutral-shade-90);
+      --background-color-hover: var(--neutral-100);
+      --color: var(--neutral-100);
+      --color-hover: var(--neutral-shade-90);
+    }
+
+    &.primary {
+      --background-color: var(--neutral-100);
+      --background-color-hover: var(--primary-shade-80);
+      --color: var(--primary-shade-80);
+      --color-hover: var(--neutral-100);
+    }
+
+    &.danger {
+      --background-color: var(--error-tint-40);
+      --background-color-hover: var(--error);
+      --color: var(--error);
+      --color-hover: var(--error-tint-40);
+    }
+
+    &:hover {
+      background-color: var(--background-color-hover);
+    }
+  }
+
+  &.large {
+    padding: 1rem 2rem;
+  }
+
+  &.inline {
+    padding: 0.2rem 0.5rem;
+
+    font-weight: 700;
+  }
+}

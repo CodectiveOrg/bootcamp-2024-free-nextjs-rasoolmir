@@ -38,6 +38,8 @@
   --accept-shade-40: hsl(116, 100%, 16%);
   --accept-tint-40: hsl(115, 65%, 76%);
 
+
+  
   /* ERROR Colors */
   --error: hsl(0, 100%, 46%);
   --error-shade-40: hsl(0, 100%, 18%);
