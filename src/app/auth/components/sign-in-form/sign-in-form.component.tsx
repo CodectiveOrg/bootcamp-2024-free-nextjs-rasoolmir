@@ -26,8 +26,8 @@ export default function SignInFormComponent(): ReactElement {
     <div className={styles["auth-form"]}>
       <CardComponent>
         <div className={styles["card-content"]}>
-		<div className={styles.visuals}>
-            <Image src={signInImage} alt=""/>
+          <div className={styles.visuals}>
+            <Image src={signInImage} alt="" />
           </div>
           <div className={styles.writings}>
             <h1>Sign In</h1>
@@ -46,7 +46,7 @@ export default function SignInFormComponent(): ReactElement {
               <ButtonComponent variant="primary">Sign In</ButtonComponent>
             </form>
             <div className={styles["change-form"]}>
-              Don't have an account?
+              Don&apos;t have an account?
               {` `}
               <Link href="/auth/sign-up">Sign Up</Link>.
             </div>

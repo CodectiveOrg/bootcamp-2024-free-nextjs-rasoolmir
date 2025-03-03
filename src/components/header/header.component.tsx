@@ -29,15 +29,15 @@ export default function HeaderComponent(): ReactElement {
             Empoloyers
           </Link>
           <div className={styles.divider}></div>
-		  
-		  <ButtonLinkComponent
-        variant="primary"
-        shape="outlined"
-        className={styles.cta}
-        href="/auth/sign-in"
-      >
-        <StashSigninLight /> sign up
-      </ButtonLinkComponent>
+
+          <ButtonLinkComponent
+            variant="primary"
+            shape="outlined"
+            className={styles.cta}
+            href="/auth/sign-in"
+          >
+            <StashSigninLight /> sign up
+          </ButtonLinkComponent>
         </div>
       </div>
       <div className={styles.bottom}>

@@ -29,7 +29,7 @@ export default function SignUpFormComponent(): ReactElement {
     <div className={styles["auth-form"]}>
       <CardComponent>
         <div className={styles["card-content"]}>
-		<div className={styles.visuals}>
+          <div className={styles.visuals}>
             <Image src={signUpImage} alt="" />
           </div>
           <div className={styles.writings}>
