@@ -1,0 +1,9 @@
+.wrapper {
+  display: grid;
+  gap: 0.25rem;
+
+  .title {
+    font-size: var(--fz-500);
+    font-weight: 700;
+  }
+}

@@ -5,6 +5,8 @@ import { ReactElement } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { ButtonLinkComponent } from "@/components/button/button.component";
+
 import JobiorLogo from "@/logo/jobior.logo";
 import StashSigninLight from "@/icons/StashSigninLight";
 
@@ -27,9 +29,15 @@ export default function HeaderComponent(): ReactElement {
             Empoloyers
           </Link>
           <div className={styles.divider}></div>
-          <button className={styles.cta}>
+
+          <ButtonLinkComponent
+            variant="primary"
+            shape="outlined"
+            className={styles.cta}
+            href="/auth/sign-in"
+          >
             <StashSigninLight /> sign up
-          </button>
+          </ButtonLinkComponent>
         </div>
       </div>
       <div className={styles.bottom}>
