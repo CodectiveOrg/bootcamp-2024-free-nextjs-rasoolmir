@@ -22,14 +22,11 @@ import MingcuteMailLine from "@/icons/MingcuteMailLine";
 
 import styles from "@/app/auth/styles/auth-form.module.css";
 
-
-
-
 export default function SignUpFormComponent(): ReactElement {
   const formSubmitHandler = async (
     e: FormEvent<HTMLFormElement>,
   ): Promise<void> => {
-    e.preventDefault()
+    e.preventDefault();
 
     const formData = new FormData(e.currentTarget);
 
@@ -41,23 +38,24 @@ export default function SignUpFormComponent(): ReactElement {
     };
 
     const response = await fetch("/api/auth/sign-up", {
-        method: "POST",
-        body: JSON.stringify(dto),
-       });
+      method: "POST",
+      body: JSON.stringify(dto),
+    });
 
-       const result = await response.json();
+    const result = await response.json();
 
-       if (!response.ok) {
-        let message: string = "An unexpected error occurred.";
+    if (!response.ok) {
+      let message: string = "An unexpected error occurred.";
 
-        if ("error" in result) {
+      if ("error" in result) {
         message = result.error;
-       }
+      }
 
-       toast.error(message);
-       return;
-        }
-       toast.success("Registration was successful."); 
+      toast.error(message);
+      return;
+    }
+
+    toast.success("Registration was successful.");
   };
 
   return (

@@ -37,7 +37,7 @@ export async function wrapWithTryCatch<T>(
     }
 
     return NextResponse.json(
-      { error: "An unexpected error occurred." },
+      { error: "خطای غیرمنتظره رخ داد." },
       { status: 500 },
     );
   }

@@ -38,6 +38,8 @@ export async function POST(request: Request): Promise<ApiResponseType<null>> {
       );
     }
 
+    await prisma.user.create({ data: { ...body } });
+
     return NextResponse.json({ data: null }, { status: 201 });
   });
 }
