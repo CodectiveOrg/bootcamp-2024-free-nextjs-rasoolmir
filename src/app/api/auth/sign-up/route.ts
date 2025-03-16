@@ -1,14 +1,14 @@
 import { NextResponse } from "next/server";
 
+import { SignUpDto } from "@/dto/auth.dto";
+
 import prisma from "@/lib/prisma";
 
 import { ApiResponseType } from "@/types/api-respones.type";
 
 import { parseBody, wrapWithTryCatch } from "@/utils/api.utils";
-import { SignUpDto } from "@/dto/auth.dto";
 
-
-export async function Post(request: Request): Promise<ApiResponseType<null>> {
+export async function POST(request: Request): Promise<ApiResponseType<null>> {
   return wrapWithTryCatch(async () => {
     const [parseError, body] = await parseBody<SignUpDto>(request);
 
@@ -32,11 +32,11 @@ export async function Post(request: Request): Promise<ApiResponseType<null>> {
     });
 
     if (foundUser) {
-      return NextResponse.json({ error: "The email is already in use." }, { status: 400 });
+      return NextResponse.json(
+        { error: "The email is already in use." },
+        { status: 400 },
+      );
     }
-
-
-    await prisma.user.create({ data: body });
 
     return NextResponse.json({ data: null }, { status: 201 });
   });
