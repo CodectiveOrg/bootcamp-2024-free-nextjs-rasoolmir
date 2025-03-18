@@ -6,7 +6,7 @@ import prisma from "@/lib/prisma";
 
 import { ApiResponseType } from "@/types/api-respones.type";
 
-import { parseBody, wrapWithTryCatch } from "@/utils/api.utils";
+import { parseBody, setAuthCookie, wrapWithTryCatch } from "@/utils/api.utils";
 
 export async function POST(request: Request): Promise<ApiResponseType<null>> {
   return wrapWithTryCatch(async () => {
@@ -22,17 +22,19 @@ export async function POST(request: Request): Promise<ApiResponseType<null>> {
 
     if (!foundUser) {
       return NextResponse.json(
-        { error: "کاربری با این مشخصات پیدا نشد." },
+        { error: "No user found with these credentials." },
         { status: 404 },
       );
     }
 
-    if (body.password !== foundUser.password) {
+    if ((body.password, foundUser.password)) {
       return NextResponse.json(
-        { error: "رمز عبور اشتباه است." },
+        { error: "The password is incorrect." },
         { status: 401 },
       );
     }
+
+    await setAuthCookie();
 
     return NextResponse.json({ data: null }, { status: 200 });
   });

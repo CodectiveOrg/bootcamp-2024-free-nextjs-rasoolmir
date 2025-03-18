@@ -22,7 +22,6 @@ import { SignInDto } from "@/dto/auth.dto";
 import styles from "@/app/auth/styles/auth-form.module.css";
 
 export default function SignInFormComponent(): ReactElement {
-
   const router = useRouter();
 
   const formRef = useRef<HTMLFormElement>(null);
@@ -53,9 +52,8 @@ export default function SignInFormComponent(): ReactElement {
     }
 
     formRef.current?.reset();
+    router.push("/dashboard");
   };
-
-  
 
   return (
     <div className={styles["auth-form"]}>
