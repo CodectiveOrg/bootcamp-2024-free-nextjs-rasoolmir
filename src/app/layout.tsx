@@ -5,6 +5,7 @@ import { Vazirmatn } from "next/font/google";
 
 import HeaderComponent from "@/components/header/header.component";
 import FooterComponent from "@/components/footer/footer.component";
+import ToasterComponent from "@/components/toaster/toaster.component";
 
 import "@/styles/typography.css";
 
@@ -31,6 +32,7 @@ export default function RootLayout({
         <HeaderComponent />
         <main>{children}</main>
         <FooterComponent />
+        <ToasterComponent />
       </body>
     </html>
   );
